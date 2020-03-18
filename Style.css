@@ -1,5 +1,10 @@
 ﻿/* Polices d'écritures pour les différents textes */
     @font-face{
+    font-family: 'NimbusSanL-Reg';
+    src: url('Polices/NimbusSanL-Reg.otf');
+    }
+
+    @font-face{
         font-family: 'segoeprb';
         src: url('Polices/segoeprb.ttf');
     }
@@ -10,14 +15,29 @@
     }
 
     @font-face{
+        font-family: 'Quicksand-Regular';
+        src: url('Polices/Quicksand-Regular.otf');
+    }
+
+    @font-face{
         font-family: 'SegoePrint';
         src: url('Polices/segoeprb.ttf');
     }
     
+    @font-face{
+        font-family: 'AlexBrush-Regular';
+        src: url('Polices/AlexBrush-Regular.ttf')
+    }
+
+    @font-face{
+        font-family: 'KaushanScript-Regular';
+        src: url('Polices/KaushanScript-Regular.otf')
+    }
 /*-----------------------------------------------*/
 
 header, aside, footer, footer a
 {
+    font-family: 'NimbusSanL-Reg';
     color: #fdcb46;
     background-color: #579c87;
 }
@@ -75,6 +95,7 @@ a
 
     .menu2
     {
+        font-family: 'Quicksand-Regular';
         background-color: #fff5fe;
     }
 
@@ -95,6 +116,7 @@ a
 
     .menu3
     {
+        font-family: 'AlexBrush-Regular';
         background-color: #f9f9f9;
     }
 
@@ -106,6 +128,7 @@ a
 
     .menu4
     {
+        font-family: 'KaushanScript-Regular';
         background-color: #fdfffd;
     }
 
