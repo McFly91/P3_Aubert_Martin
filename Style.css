@@ -1,0 +1,140 @@
+﻿/* Polices d'écritures pour les différents textes */
+    @font-face{
+        font-family: 'segoeprb';
+        src: url('Polices/segoeprb.ttf');
+    }
+
+    @font-face{
+        font-family: 'SCRIPTBL';
+        src: url('Polices/SCRIPTBL.TTF');
+    }
+
+    @font-face{
+        font-family: 'SegoePrint';
+        src: url('Polices/segoeprb.ttf');
+    }
+    
+/*-----------------------------------------------*/
+
+header, aside, footer, footer a
+{
+    color: #fdcb46;
+    background-color: #579c87;
+}
+
+body
+{
+    margin: 0;
+}
+
+h1
+{
+    text-align: center;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/* Configuration des menus                       */
+    .menu1, .menu2, .menu3, .menu4
+    {
+        width: 10em;
+        height: 15em;
+        box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 1em;
+    }
+/*-----------------------------------------------*/
+
+/* Configuration de l'affichage des menus 1 et 2 */
+    #menu1_2
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu1
+    {
+        font-family: 'SCRIPTBL';
+        background-color: #fcdfdb;
+    }
+
+    .menu1 a
+    {
+        font-family: 'segoeprb';
+        color: #3c1218;
+        text-transform: uppercase;
+    }
+
+    .menu2
+    {
+        background-color: #fff5fe;
+    }
+
+    .menu2 a
+    {
+        font-family: Georgia;
+        font-weight: bold;
+        color: #c77412;
+    }
+/*-----------------------------------------------*/
+
+/* Configuration de l'affichage des menus 3 et 4 */
+    #menu3_4
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu3
+    {
+        background-color: #f9f9f9;
+    }
+
+    .menu3 a
+    {
+        font-family: 'SegoePrint';
+        color: #0887fb;
+    }
+
+    .menu4
+    {
+        background-color: #fdfffd;
+    }
+
+    .menu4 a
+    {
+        font-family: 'SegoePrint';
+        color: #72bf56;
+    }
+/*-----------------------------------------------*/
+
+#section_aside
+{
+    display: flex;
+    flex-direction: column;
+}
+
+aside
+{
+    width: 20em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    margin-top: 1em;
+}
