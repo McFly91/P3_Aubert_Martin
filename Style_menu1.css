@@ -1,0 +1,88 @@
+﻿/* Polices d'écritures pour les différents textes */
+    @font-face{
+    font-family: 'NimbusSanL-Reg';
+    src: url('Polices/NimbusSanL-Reg.otf');
+    }
+
+    @font-face{
+        font-family: 'segoeprb';
+        src: url('Polices/segoeprb.ttf');
+    }
+
+    @font-face{
+        font-family: 'SCRIPTBL';
+        src: url('Polices/SCRIPTBL.TTF');
+    }
+/*-----------------------------------------------*/
+
+header, aside, footer, footer a
+{
+    font-family: 'NimbusSanL-Reg';
+    color: #fdcb46;
+    background-color: #579c87;
+}
+
+body
+{
+    margin: 0;
+}
+
+h1
+{
+    text-align: center;
+    margin: 0;
+}
+
+/*Configuration du menu 1                       */
+    .menu1
+    {
+        box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 5em;
+        padding: 5em 20em 5em 20em;
+        font-family: 'SCRIPTBL';
+        background-color: #fcdfdb;
+    }
+
+    .menu1 a
+    {
+        font-family: 'segoeprb';
+        color: #3c1218;
+        text-transform: uppercase;
+    }
+
+    .composition
+    {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+    }
+/*---------------------------------------------*/
+
+
+#section_aside
+{
+    display: flex;
+    flex-direction: column;
+}
+
+aside
+{
+    width: 20em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    margin-top: 1em;
+}
