@@ -15,72 +15,84 @@
     }
 /*-----------------------------------------------*/
 
-header, aside, footer, footer a
-{
+header, footer, footer a {
     font-family: 'NimbusSanL-Reg';
     color: #fdcb46;
     background-color: #579c87;
 }
 
-body
-{
+body {
     margin: 0;
+    font-size: 1.6em;
 }
 
-h1
-{
+header {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin: 0;
 }
 
+h2 {
+    font-family: 'NimbusSanL-Reg';
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
 /*Configuration du menu 1                       */
-    .menu1
-    {
+    .menu1 {
         box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
         display: flex;
         flex: 1;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin: 5em;
-        padding: 5em 20em 5em 20em;
+        margin: 1em 5em 2em 5em;
+        padding: 2em 10em 2em 10em;
         font-family: 'SCRIPTBL';
         background-color: #fcdfdb;
     }
 
-    .menu1 a
-    {
-        font-family: 'segoeprb';
-        color: #3c1218;
-        text-transform: uppercase;
+    .titre {
+        font-size: 2em;
     }
 
-    .composition
-    {
+    .titre_composition {
+        display: flex;
+    }
+
+    /*.deco {
+
+    }*/
+
+    .composition {
         display: flex;
         justify-content: space-between;
         text-align: start;
     }
+
+    .composition div {
+        padding-right: 0.5em;
+    }
+
+    h3 img {
+        max-width: 8%;
+    }
+
+    h3 span {
+        vertical-align: super;
+    }
 /*---------------------------------------------*/
 
-
-#section_aside
-{
-    display: flex;
-    flex-direction: column;
-}
-
-aside
-{
-    width: 20em;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-footer
-{
+footer {
     display: flex;
     justify-content: space-between;
     padding: 0.5em;
