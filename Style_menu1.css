@@ -23,7 +23,7 @@ header, footer, footer a {
 
 body {
     margin: 0;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 header {
@@ -45,6 +45,7 @@ h3 {
 
 a {
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 /*Configuration du menu 1                       */
@@ -84,7 +85,7 @@ a {
     }
 
     h3 img {
-        max-width: 8%;
+        max-width: 6%;
     }
 
     h3 span {
@@ -92,9 +93,22 @@ a {
     }
 /*---------------------------------------------*/
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em;
-    margin-top: 1em;
-}
+/* Configuration du footer                     */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em 1em 0.5em 1em;
+        margin-top: 1em;
+    }
+
+    /* Animations sur le footer        */    
+        .mentions, .contactez {
+            cursor: pointer;
+            position: relative;
+            transition: all 300ms;
+        }
+        .mentions:hover, .contactez:hover {
+            transform: scale(1.2);
+        }
+    /*----------------------------------*/
+/*-----------------------------------------------*/

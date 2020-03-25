@@ -50,14 +50,15 @@ header {
 
 body {
     margin: 0;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 a {
     text-decoration: none;
+    font-size: 1.5em;
 }
 
-/* Configuration des menus                       */
+/* Configuration des menus                           */
     .menu1, .menu2, .menu3, .menu4 {
         width: 12em;
         height: 20em;
@@ -68,82 +69,111 @@ a {
         text-align: center;
         margin: 1em;
     }
-/*-----------------------------------------------*/
 
-/* Configuration de l'affichage des menus 1 et 2 */
-    #menu1_2 {
+    /* Configuration de l'affichage des menus 1 et 2 */
+        #menu1_2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu1 {
+            font-family: 'SCRIPTBL';
+            background-color: #fcdfdb;
+        }
+
+        .menu1 img {
+            &--skewY {
+                transform: skewY(45deg);
+            }
+        }
+
+        .menu1 a {
+            font-family: 'segoeprb';
+            color: #3c1218;
+            text-transform: uppercase;
+        }
+
+        .menu2 {
+            font-family: 'Quicksand-Regular';
+            background-color: #fff5fe;
+        }
+
+        .menu2 a {
+            font-family: Georgia;
+            font-weight: bold;
+            color: #c77412;
+        }
+    /*------------------------------------------------*/
+
+    /* Configuration de l'affichage des menus 3 et 4 */
+        #menu3_4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu3 {
+            font-family: 'AlexBrush-Regular';
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+
+        .menu3 a {
+            font-family: 'SegoePrint';
+            color: #0887fb;
+        }
+
+        .menu4 {
+            font-family: 'KaushanScript-Regular';
+            background-color: #fdfffd;
+        }
+
+        .menu4 a {
+            font-family: 'SegoePrint';
+            color: #72bf56;
+        }
+    /*------------------------------------------------*/
+/*---------------------------------------------------*/
+
+/* Configuration de l'affichage du bloc aside       */
+    aside {
+        width: 15em;
+        height: 2.5em;
+        border-radius: 10px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        margin: auto;
     }
 
-    .menu1 {
-        font-family: 'SCRIPTBL';
-        background-color: #fcdfdb;
+    aside p {
+        margin: auto;
+        font-size: 1.5em;
     }
+/*------------------------------------------------*/
 
-    .menu1 a {
-        font-family: 'segoeprb';
-        color: #3c1218;
-        text-transform: uppercase;
-    }
-
-    .menu2 {
-        font-family: 'Quicksand-Regular';
-        background-color: #fff5fe;
-    }
-
-    .menu2 a {
-        font-family: Georgia;
-        font-weight: bold;
-        color: #c77412;
-    }
-/*-----------------------------------------------*/
-
-/* Configuration de l'affichage des menus 3 et 4 */
-    #menu3_4 {
+/* Configuration de l'alignement du bloc section et du bloc aside */
+    #section_aside {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+    }
+/*----------------------------------------------------------------*/
+
+/* Configuration du footer                     */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5em 1em 0.5em 1em;
+        margin-top: 1em;
     }
 
-    .menu3 {
-        font-family: 'AlexBrush-Regular';
-        font-weight: bold;
-        background-color: #f9f9f9;
-    }
-
-    .menu3 a {
-        font-family: 'SegoePrint';
-        color: #0887fb;
-    }
-
-    .menu4 {
-        font-family: 'KaushanScript-Regular';
-        background-color: #fdfffd;
-    }
-
-    .menu4 a {
-        font-family: 'SegoePrint';
-        color: #72bf56;
-    }
+    /* Animations sur le footer        */    
+        .mentions, .contactez {
+            cursor: pointer;
+            position: relative;
+            transition: all 300ms;
+        }
+        .mentions:hover, .contactez:hover {
+            transform: scale(1.2);
+        }
+    /*----------------------------------*/
 /*-----------------------------------------------*/
-
-#section_aside {
-    display: flex;
-    flex-direction: column;
-}
-
-aside {
-    width: 15em;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em;
-    margin-top: 1em;
-}
