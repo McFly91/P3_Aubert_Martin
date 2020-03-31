@@ -10,8 +10,8 @@
     }
 
     @font-face{
-        font-family: 'SCRIPTBL';
-        src: url('Polices/SCRIPTBL.TTF');
+        font-family: 'Quicksand-Regular';
+        src: url('Polices/Quicksand-Regular.otf');
     }
 /*-----------------------------------------------*/
 
@@ -45,7 +45,7 @@ a {
 }
 
 /*Configuration du menu 1                       */
-    .menu1 {
+    .menu2 {
         box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
         display: flex;
         flex: 1;
@@ -54,11 +54,11 @@ a {
         text-align: center;
         margin: 1em 5em 8em 5em;
         padding: 2em 10em 2em 10em;
-        font-family: 'SCRIPTBL';
-        background-color: #fcdfdb;
+        font-family: 'Quicksand-Regular';
+        background-color: #fff5fe;
     }
 
-    .menu1 img {
+    .menu2 img {
         animation: note 3s ease-in-out infinite;
     }
 
@@ -68,11 +68,15 @@ a {
         100% {transform: skew(0deg);}
     }
 
-    .titre {
+    .menu2_titre {
         font-size: 2em;
+        font-weight: bold;
+        background: linear-gradient(to right, #db8528, #8f5bfe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
-    .titre_composition {
+    .menu2_titre_composition {
         text-align: center;
     }
 
@@ -103,32 +107,22 @@ a {
         background: black;
     }
 
-    .composition {
+    .menu2_entrée {
+        color: #c67412;
+    }
+
+    .menu2_composition {
         display: flex;
         justify-content: space-between;
         text-align: start;
     }
 
-    .composition div {
+    .menu2_composition div {
         padding-right: 0.5em;
     }
-    
-    /* Logo et titre de fin                    */
-    .fin_menu {
-        display: flex;
-        justify-content: center;
-        font-size: 1.6em;
-        margin: 1em 0 1em 0;
-    }
-
-    .fin_menu img {
-        max-width: 6%;
-        padding-right: 0.5em;
-    }
-    /*-----------------------------------------*/
 /*---------------------------------------------*/
 
-/* Configuration du footer                     */
+/* Configuration du footer                                      */
     footer {
         display: flex;
         justify-content: space-between;
@@ -141,7 +135,7 @@ a {
         padding : 0.5em 2em 0.5em 2em;
     }
 
-    /* Animations sur le footer                  */    
+    /* Animations sur le footer                                   */    
         .mentions:hover, .contactez:hover {
             animation: wiggle 0.5s infinite;
         }
@@ -159,5 +153,5 @@ a {
             90% { transform: translate(1px, 2px) rotate(0deg); }
             100% { transform: translate(1px, -2px) rotate(-1deg); }
         }
-    /*-------------------------------------------*/
-/*-----------------------------------------------*/
+    /*-------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
