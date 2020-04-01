@@ -58,6 +58,10 @@ a {
     font-size: 1.5em;
 }
 
+span {
+    display: block;
+}
+
 /* Configuration des menus                           */
     .menu1, .menu2, .menu3, .menu4 {
         width: 12em;
@@ -83,6 +87,7 @@ a {
         }
 
         .menu1 img {
+            max-width: 20%;
             animation: note 3s ease-in-out infinite;
         }
 
@@ -127,6 +132,13 @@ a {
             font-family: 'AlexBrush-Regular';
             font-weight: bold;
             background-color: #f9f9f9;
+        }
+
+        .menu3 span {
+            font-size: 1.3em;
+            background: linear-gradient(to right, #0022db, #56b3f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .menu3 a {

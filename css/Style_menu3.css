@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* Polices d'écritures pour les différents textes */
+@font-face {
+  font-family: "NimbusSanL-Reg";
+  src: url("Polices/NimbusSanL-Reg.otf");
+}
+@font-face {
+  font-family: "segoeprb";
+  src: url("Polices/segoeprb.ttf");
+}
+@font-face {
+  font-family: "AlexBrush-Regular";
+  src: url("Polices/AlexBrush-Regular.ttf");
+}
+/*-----------------------------------------------*/
+header, footer, footer a {
+  font-family: "NimbusSanL-Reg";
+  color: #fdcb46;
+  background-color: #579c87;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-family: "NimbusSanL-Reg";
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/*Configuration du menu 2                                                                          */
+.menu3 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1em 5em 8em 5em;
+  padding: 2em 10em 6em 10em;
+  font-family: "AlexBrush-Regular";
+  font-weight: bold;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+}
+.menu3 p {
+  font-size: 1.3em;
+}
+.menu3--entree h3:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: 50%;
+  right: 100%;
+  background: #0022db;
+}
+.menu3--entree h3:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: 50%;
+  left: 100%;
+  background: #0022db;
+}
+.menu3--principal h3:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: 50%;
+  right: 100%;
+  background: #0670f3;
+}
+.menu3--principal h3:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: 50%;
+  left: 100%;
+  background: #0670f3;
+}
+.menu3--dessert h3:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: 50%;
+  right: 100%;
+  background: #56b3f7;
+}
+.menu3--dessert h3:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  top: 50%;
+  left: 100%;
+  background: #56b3f7;
+}
+.menu3_titre {
+  font-size: 2em;
+  font-weight: bold;
+  background: linear-gradient(to right, #0022db, #56b3f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu3_titre_composition {
+  text-align: center;
+}
+.menu3_composition {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+.menu3_composition div {
+  padding-right: 0.5em;
+}
+
+h3 {
+  font-size: 1.4em;
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  margin-top: 2em;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Configuration du footer                                        */
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Animations sur le footer                                   */
+.mentions, .contactez {
+  padding: 0.5em 2em 0.5em 2em;
+}
+.mentions :hover, .contactez :hover {
+  animation: wiggle 0.5s infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+/*-------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+
+/*# sourceMappingURL=Style_menu3.css.map */
