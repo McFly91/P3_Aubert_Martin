@@ -1,0 +1,19 @@
+@mixin deco-menu-right {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 50%;
+    right: 100%;
+    background: linear-gradient(90deg, $deco-principal-color, $deco-principal-color-2);
+}
+
+@mixin deco-menu-left {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 50%;
+    left: 100%;
+    background: linear-gradient(-90deg, $deco-principal-color, $deco-principal-color-2);
+}

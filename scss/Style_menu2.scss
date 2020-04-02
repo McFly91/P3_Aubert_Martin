@@ -1,18 +1,5 @@
 ﻿/* Polices d'écritures pour les différents textes */
-    @font-face{
-    font-family: 'NimbusSanL-Reg';
-    src: url('Polices/NimbusSanL-Reg.otf');
-    }
-
-    @font-face{
-        font-family: 'segoeprb';
-        src: url('Polices/segoeprb.ttf');
-    }
-
-    @font-face{
-        font-family: 'Quicksand-Regular';
-        src: url('Polices/Quicksand-Regular.otf');
-    }
+    @import "./base/polices";
 /*-----------------------------------------------*/
 
 // Variables et mixins                                 

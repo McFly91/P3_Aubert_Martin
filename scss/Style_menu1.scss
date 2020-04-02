@@ -1,19 +1,7 @@
 ﻿/* Polices d'écritures pour les différents textes */
-    @font-face{
-    font-family: 'NimbusSanL-Reg';
-    src: url('Polices/NimbusSanL-Reg.otf');
-    }
-
-    @font-face{
-        font-family: 'segoeprb';
-        src: url('Polices/segoeprb.ttf');
-    }
-
-    @font-face{
-        font-family: 'SCRIPTBL';
-        src: url('Polices/SCRIPTBL.TTF');
-    }
+    @import "./base/polices";
 /*-----------------------------------------------*/
+
 // Variables et mixins                                 
     // Variables du header et footer                  
     $text-color-header-footer: #fdcb46;
