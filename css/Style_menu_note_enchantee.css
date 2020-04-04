@@ -29,10 +29,12 @@
   src: url("Polices/KaushanScript-Regular.otf");
 }
 /*-----------------------------------------------*/
-header, footer, footer a {
+header, footer {
+  background-color: #579c87;
+}
+header a, footer a {
   font-family: "NimbusSanL-Reg";
   color: #fdcb46;
-  background-color: #579c87;
 }
 
 body {
@@ -43,7 +45,6 @@ body {
 header {
   display: flex;
   justify-content: center;
-  text-align: center;
   margin: 0;
 }
 
@@ -55,7 +56,6 @@ h2 {
 
 a {
   text-decoration: none;
-  font-size: 1.5em;
 }
 
 /*Configuration du menu 1                                                                       */
@@ -120,13 +120,13 @@ a {
 
 @keyframes note {
   0% {
-    transform: skew(0deg);
+    transform: skew(0deg) perspective(0px) translateZ(0px);
   }
   50% {
-    transform: skew(5deg);
+    transform: skew(5deg) perspective(60px) translateZ(4px);
   }
   100% {
-    transform: skew(0deg);
+    transform: skew(0deg) perspective(0px) translateZ(0px);
   }
 }
 h3 {
@@ -144,6 +144,9 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+footer a {
+  font-size: 1.5em;
 }
 
 /* Animations sur le footer                                   */
@@ -190,6 +193,6 @@ footer {
   }
 }
 /*-------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
 
-/*# sourceMappingURL=Style_menu_note_enchantee.css.map */
+/*# sourceMappingURL=style_menu_note_enchantee.css.map */

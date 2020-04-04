@@ -4,73 +4,17 @@
 
 // Variables et mixins                                 
     // Variables du header et footer                  
-    $text-color-header-footer: #fdcb46;
-    $background-color-header-footer: #579c87;
+        @import "./utils/_variables_header_footer";
     ///////////////////////////////////////////////////
     // Variables des menus
-        // Couleurs
-        $box-shadow-color: rgba(237, 237, 237, 0.75);
-        $menu-color: #fcdfdb;
-        $deco-principal-color: black;
-        ///////////////////////////////////////////////
-        // Dimensions
-        $menu-margin: 1em 5em 8em 5em;
-        $menu-padding: 2em 10em 2em 10em;
-        ///////////////////////////////////////////////
+        @import "./utils/variables_menu_note_enchantee";
     ///////////////////////////////////////////////////
-    @mixin box-shadow {
-        box-shadow: 0px 0px 10px 3px $box-shadow-color;
-    }
+    @import "./utils/mixins_common";
 
-    @mixin deco-menu-right($color) {
-        content: "";
-        position: absolute;
-        height: 5px;
-        width: 100%;
-        top: 50%;
-        right: 100%;
-        background: $color;
-    }
-
-    @mixin deco-menu-left($color) {
-        content: "";
-        position: absolute;
-        height: 5px;
-        width: 100%;
-        top: 50%;
-        left: 100%;
-        background: $color;
-    }
+    @import "./utils/mixins_menu_note_enchantee";
 ////////////////////////////////////////////////////////
 
-header, footer, footer a {
-font-family: 'NimbusSanL-Reg';
-color: $text-color-header-footer;
-background-color: $background-color-header-footer;
-}
-
-body {
-margin: 0;
-font-size: 1.4em;
-}
-
-header {
-display: flex;
-justify-content: center;
-text-align: center;
-margin: 0;
-}
-
-h2 {
-font-family: 'NimbusSanL-Reg';
-text-align: center;
-margin-bottom: 0em;
-}
-
-a {
-text-decoration: none;
-font-size: 1.5em;
-}
+@import "./layouts/body";
 
 /*Configuration du menu 1                                                                       */
     .menu_note_enchantee {
@@ -129,11 +73,8 @@ font-size: 1.5em;
         }
     }
 
-    @keyframes note {
-        0% {transform: skew(0deg);}
-        50% {transform: skew(5deg);}
-        100% {transform: skew(0deg);}
-    }
+    // Animation de la note de musique sur le menu la Note enchantée
+    @import "./components/_animation_menu_note_enchantee";
 
     h3 {
         font-size: 1.4em;
@@ -144,35 +85,5 @@ font-size: 1.5em;
 /*-----------------------------------------------------------------------------------------------*/
 
 /* Configuration du footer                                        */
-    footer {
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-    }
-
-    /* Animations sur le footer                                   */
-        .mentions, .contactez {
-            padding : 0.5em 2em 0.5em 2em;
-
-            :hover {
-                animation: wiggle 0.5s infinite;
-            }
-        }
-
-        @keyframes wiggle {
-            0% { transform: translate(1px, 1px) rotate(0deg); }
-            10% { transform: translate(-1px, -2px) rotate(-1deg); }
-            20% { transform: translate(-3px, 0px) rotate(1deg); }
-            30% { transform: translate(3px, 2px) rotate(0deg); }
-            40% { transform: translate(1px, -1px) rotate(1deg); }
-            50% { transform: translate(-1px, 2px) rotate(-1deg); }
-            60% { transform: translate(-3px, 1px) rotate(0deg); }
-            70% { transform: translate(3px, 1px) rotate(-1deg); }
-            80% { transform: translate(-1px, -1px) rotate(1deg); }
-            90% { transform: translate(1px, 2px) rotate(0deg); }
-            100% { transform: translate(1px, -2px) rotate(-1deg); }
-        }
-    /*-------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
+    @import "./layouts/footer";
+/*----------------------------------------------------------------*/
