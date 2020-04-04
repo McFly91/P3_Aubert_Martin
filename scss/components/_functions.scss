@@ -1,0 +1,10 @@
+@mixins animation-menus {
+    @if (a:hover){
+        @keyframes menus {
+            0% {
+                opacity: 1;
+                
+            }
+        }
+    }
+}

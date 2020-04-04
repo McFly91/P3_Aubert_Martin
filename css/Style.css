@@ -29,17 +29,12 @@
   src: url("Polices/KaushanScript-Regular.otf");
 }
 /*-----------------------------------------------*/
-header, aside, footer, footer a {
-  font-family: "NimbusSanL-Reg";
-  color: #fdcb46;
+header, footer {
   background-color: #579c87;
 }
-
-header {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 0;
+header a, footer a {
+  font-family: "NimbusSanL-Reg";
+  color: #fdcb46;
 }
 
 body {
@@ -47,17 +42,32 @@ body {
   font-size: 1.4em;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+h2 {
+  font-family: "NimbusSanL-Reg";
+  text-align: center;
+  margin-bottom: 0em;
+}
+
 a {
   text-decoration: none;
-  font-size: 1.5em;
+}
+
+section {
+  padding-bottom: 2em;
 }
 
 span {
   display: block;
 }
 
-/* Configuration des menus                           */
-.menu1, .menu2, .menu3, .menu4 {
+/* Configuration des menus                                                                             */
+.menu_note_enchantee, .menu_chic_a_la_francaise, .menu_delice_des_papilles, .menu_palette_du_gout {
   width: 12em;
   height: 20em;
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
@@ -67,22 +77,29 @@ span {
   text-align: center;
   margin: 1em;
 }
+.menu_note_enchantee a, .menu_chic_a_la_francaise a, .menu_delice_des_papilles a, .menu_palette_du_gout a {
+  font-size: 1.5em;
+}
 
-/* Configuration de l'affichage des menus 1 et 2 */
-#menu1_2 {
+/* Configuration de l'affichage des menus La Note Enchantée et Le Chic à la Française */
+#menu_note_enchantee_et_chic_a_la_francaise {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menu1 {
+.menu_note_enchantee {
   font-family: "SCRIPTBL";
   background-color: #fcdfdb;
 }
-
-.menu1 img {
+.menu_note_enchantee img {
   max-width: 20%;
   animation: note 3s ease-in-out infinite;
+}
+.menu_note_enchantee a {
+  font-family: "segoeprb";
+  color: #3c1218;
+  text-transform: uppercase;
 }
 
 @keyframes note {
@@ -96,67 +113,61 @@ span {
     transform: skew(0deg) perspective(0px) translateZ(0px);
   }
 }
-.menu1 a {
-  font-family: "segoeprb";
-  color: #3c1218;
-  text-transform: uppercase;
-}
-
-.menu2 {
+.menu_chic_a_la_francaise {
   font-family: "Quicksand-Regular";
   background-color: #fff5fe;
 }
-
-.menu2 span {
+.menu_chic_a_la_francaise span {
   font-weight: bold;
-  background: linear-gradient(to right, #db8528, #8f5bfe);
+  background: linear-gradient(to right top, #db8528, #8f5bfe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.menu2 a {
+.menu_chic_a_la_francaise a {
   font-family: Georgia;
   font-weight: bold;
   color: #c77412;
 }
 
-/*------------------------------------------------*/
-/* Configuration de l'affichage des menus 3 et 4 */
-#menu3_4 {
+/*----------------------------------------------------------------------------------------*/
+/* Configuration de l'affichage des menus delice des paipilles et palette du gout */
+#menu_delice_des_papilles_et_palette_du_gout {
   display: flex;
   justify-content: center;
 }
 
-.menu3 {
+.menu_delice_des_papilles {
   font-family: "AlexBrush-Regular";
   font-weight: bold;
   background-color: #f9f9f9;
 }
-
-.menu3 span {
+.menu_delice_des_papilles span {
   font-size: 1.3em;
   background: linear-gradient(to right, #0022db, #56b3f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.menu3 a {
+.menu_delice_des_papilles a {
   font-family: "SegoePrint";
   color: #0887fb;
 }
 
-.menu4 {
+.menu_palette_du_gout {
   font-family: "KaushanScript-Regular";
   background-color: #fdfffd;
 }
-
-.menu4 a {
+.menu_palette_du_gout span {
+  background: linear-gradient(90deg, #3d923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu_palette_du_gout a {
   font-family: "SegoePrint";
   color: #72bf56;
 }
 
-/*------------------------------------------------*/
-/*---------------------------------------------------*/
+/*--------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
 /* Configuration de l'affichage du bloc aside       */
 aside {
   width: 15em;
@@ -166,13 +177,12 @@ aside {
   justify-content: center;
   margin: auto;
 }
-
 aside p {
   margin: auto;
   font-size: 1.5em;
 }
 
-/*------------------------------------------------*/
+/*---------------------------------------------------*/
 /* Configuration de l'alignement du bloc section et du bloc aside */
 #section_aside {
   display: flex;
@@ -180,19 +190,23 @@ aside p {
 }
 
 /*----------------------------------------------------------------*/
-/* Configuration du footer                                         */
+/* Configuration du footer                                        */
 footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 1em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  font-size: 1.5em;
 }
 
+/* Animations sur le footer                                   */
 .mentions, .contactez {
   padding: 0.5em 2em 0.5em 2em;
 }
-
-/* Animations sur le footer                                    */
-.mentions:hover, .contactez:hover {
+.mentions :hover, .contactez :hover {
   animation: wiggle 0.5s infinite;
 }
 

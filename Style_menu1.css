@@ -29,12 +29,10 @@
   src: url("Polices/KaushanScript-Regular.otf");
 }
 /*-----------------------------------------------*/
-header, footer {
-  background-color: #579c87;
-}
-header a, footer a {
+header, footer, footer a {
   font-family: "NimbusSanL-Reg";
   color: #fdcb46;
+  background-color: #579c87;
 }
 
 body {
@@ -45,6 +43,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 0;
 }
 
@@ -56,100 +55,94 @@ h2 {
 
 a {
   text-decoration: none;
+  font-size: 1.5em;
 }
 
-/*Configuration du menu 2                                                                          */
-.menu_palette_du_gout {
+/*Configuration du menu 1                                                                       */
+.menu_note_enchantee {
+  box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin: 1em 5em 8em 5em;
-  padding: 2em 10em 6em 10em;
-  font-family: "KaushanScript-Regular";
-  background-color: #fdfffd;
+  padding: 2em 10em 2em 10em;
+  font-family: "SCRIPTBL";
+  background-color: #fcdfdb;
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
 }
-.menu_palette_du_gout--entree h3:before {
+
+.menu_note_enchantee img {
+  animation: note 3s ease-in-out infinite;
+}
+
+.menu_note_enchantee h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: linear-gradient(90deg, #3d923a, #beff7f);
+  background: black;
 }
-.menu_palette_du_gout--entree h3:after {
+
+.menu_note_enchantee h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: linear-gradient(-90deg, #3d923a, #beff7f);
+  background: black;
 }
-.menu_palette_du_gout--principal h3:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 100%;
-  top: 50%;
-  right: 100%;
-  background: linear-gradient(90deg, #3d923a, #beff7f);
-}
-.menu_palette_du_gout--principal h3:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 100%;
-  top: 50%;
-  left: 100%;
-  background: linear-gradient(-90deg, #3d923a, #beff7f);
-}
-.menu_palette_du_gout--dessert h3:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 100%;
-  top: 50%;
-  right: 100%;
-  background: linear-gradient(90deg, #3d923a, #beff7f);
-}
-.menu_palette_du_gout--dessert h3:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 100%;
-  top: 50%;
-  left: 100%;
-  background: linear-gradient(-90deg, #3d923a, #beff7f);
-}
-.menu_palette_du_gout_titre {
+
+.menu_note_enchantee_titre {
   font-size: 2em;
-  font-weight: bold;
-  background: linear-gradient(90deg, #3d923a, #beff7f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
-.menu_palette_du_gout_titre_composition {
+
+.menu_note_enchantee_titre_composition {
   text-align: center;
 }
-.menu_palette_du_gout_composition {
+
+.menu_note_enchantee_composition {
   display: flex;
   justify-content: space-between;
   text-align: start;
 }
-.menu_palette_du_gout_composition div {
+
+.menu_note_enchantee_composition div {
   padding-right: 0.5em;
 }
 
+.menu_note_enchantee_fin_menu {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6em;
+  margin: 1em 0 1em 0;
+}
+
+.menu_note_enchantee_fin_menu img {
+  max-width: 6%;
+  padding-right: 0.5em;
+}
+
+@keyframes note {
+  0% {
+    transform: skew(0deg);
+  }
+  50% {
+    transform: skew(5deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
 h3 {
   font-size: 1.4em;
   display: inline-block;
   position: relative;
   width: 33%;
-  margin-top: 2em;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -161,14 +154,12 @@ footer {
   width: 100%;
   bottom: 0;
 }
-footer a {
-  font-size: 1.5em;
-}
 
 /* Animations sur le footer                                   */
 .mentions, .contactez {
   padding: 0.5em 2em 0.5em 2em;
 }
+
 .mentions :hover, .contactez :hover {
   animation: wiggle 0.5s infinite;
 }
@@ -209,6 +200,7 @@ footer a {
   }
 }
 /*-------------------------------------------------------------*/
-/*----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*# sourceMappingURL=Style_menu1.css.map */
 
-/*# sourceMappingURL=Style_menu_palette_du_gout.css.map */
+/*# sourceMappingURL=Style_menu1.css.map */

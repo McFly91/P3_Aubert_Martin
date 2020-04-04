@@ -1,38 +1,23 @@
 ﻿/* Polices d'écritures pour les différents textes */
-    @font-face{
-    font-family: 'NimbusSanL-Reg';
-    src: url('Polices/NimbusSanL-Reg.otf');
-    }
-
-    @font-face{
-        font-family: 'segoeprb';
-        src: url('Polices/segoeprb.ttf');
-    }
-
-    @font-face{
-        font-family: 'AlexBrush-Regular';
-        src: url('Polices/AlexBrush-Regular.ttf');
-    }
+    @import "./base/polices";
 /*-----------------------------------------------*/
 
 // Variables et mixins                                 
     // Variables du header et footer                  
-        $text-color-header-footer: #fdcb46;
-        $background-color-header-footer: #579c87;
-    ////////////////////////////////////////////////////
+    $text-color-header-footer: #fdcb46;
+    $background-color-header-footer: #579c87;
+    ///////////////////////////////////////////////////
     // Variables des menus
         // Couleurs
         $box-shadow-color: rgba(237, 237, 237, 0.75);
-        $menu-color: #f9f9f9;
-        $deco-entree-color: #0022db;
-        $deco-principal-color: #0670f3;
-        $deco-dessert-color: #56b3f7;
-        ////////////////////////////////////////////////
+        $menu-color: #fcdfdb;
+        $deco-principal-color: black;
+        ///////////////////////////////////////////////
         // Dimensions
         $menu-margin: 1em 5em 8em 5em;
-        $menu-padding: 2em 10em 6em 10em;
-        ////////////////////////////////////////////////
-    ////////////////////////////////////////////////////
+        $menu-padding: 2em 10em 2em 10em;
+        ///////////////////////////////////////////////
+    ///////////////////////////////////////////////////
     @mixin box-shadow {
         box-shadow: 0px 0px 10px 3px $box-shadow-color;
     }
@@ -59,36 +44,37 @@
 ////////////////////////////////////////////////////////
 
 header, footer, footer a {
-    font-family: 'NimbusSanL-Reg';
-    color: $text-color-header-footer;
-    background-color: $background-color-header-footer;
+font-family: 'NimbusSanL-Reg';
+color: $text-color-header-footer;
+background-color: $background-color-header-footer;
 }
 
 body {
-    margin: 0;
-    font-size: 1.4em;
+margin: 0;
+font-size: 1.4em;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
+display: flex;
+justify-content: center;
+text-align: center;
+margin: 0;
 }
 
 h2 {
-    font-family: 'NimbusSanL-Reg';
-    text-align: center;
-    margin-bottom: 0em;
+font-family: 'NimbusSanL-Reg';
+text-align: center;
+margin-bottom: 0em;
 }
 
 a {
-    text-decoration: none;
-    font-size: 1.5em;
+text-decoration: none;
+font-size: 1.5em;
 }
 
-/*Configuration du menu 2                                                                          */
-    .menu3 {
+/*Configuration du menu 1                                                                       */
+    .menu_note_enchantee {
+        box-shadow: 0px 0px 10px 3px $box-shadow-color;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -96,55 +82,30 @@ a {
         text-align: center;
         margin: $menu-margin;
         padding: $menu-padding;
-        font-family: 'AlexBrush-Regular';
-        font-weight: bold;
+        font-family: 'SCRIPTBL';
         background-color: $menu-color;
 
-        p {
-            font-size: 1.3em;
+        img {
+            animation: note 3s ease-in-out infinite;
         }
 
         @include box-shadow;
 
-        &--entree {
-            h3:before {
-                @include deco-menu-right($deco-entree-color)
-            } 
-            h3:after {
-                @include deco-menu-left($deco-entree-color)
-            }
+        h3:before {
+            @include deco-menu-right($deco-principal-color)
         }
-        
-        &--principal {
-            h3:before {
-                @include deco-menu-right($deco-principal-color)
-            }
-            h3:after {
-                @include deco-menu-left($deco-principal-color)
-            }
+        h3:after {
+            @include deco-menu-left($deco-principal-color)
         }
-        
-        &--dessert {
-            h3:before {
-                @include deco-menu-right($deco-dessert-color)
-            }
-            h3:after {
-                @include deco-menu-left($deco-dessert-color)
-            }
-        }
-        
+
         &_titre {
             font-size: 2em;
-            font-weight: bold;
-            background: linear-gradient(to right, $deco-entree-color, $deco-dessert-color);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            
+
             &_composition {
                 text-align: center;
             }
         }
-        
+
         &_composition {
             display: flex;
             justify-content: space-between;
@@ -154,6 +115,24 @@ a {
                 padding-right: 0.5em;
             }
         }
+
+        &_fin_menu {
+            display: flex;
+            justify-content: center;
+            font-size: 1.6em;
+            margin: 1em 0 1em 0;
+
+            img {
+                max-width: 6%;
+                padding-right: 0.5em;
+            }
+        }
+    }
+
+    @keyframes note {
+        0% {transform: skew(0deg);}
+        50% {transform: skew(5deg);}
+        100% {transform: skew(0deg);}
     }
 
     h3 {
@@ -161,7 +140,6 @@ a {
         display: inline-block;
         position: relative;
         width: 33%;
-        margin-top: 2em;
     }
 /*-----------------------------------------------------------------------------------------------*/
 
@@ -195,6 +173,6 @@ a {
             80% { transform: translate(-1px, -1px) rotate(1deg); }
             90% { transform: translate(1px, 2px) rotate(0deg); }
             100% { transform: translate(1px, -2px) rotate(-1deg); }
-            }
+        }
     /*-------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/

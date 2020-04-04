@@ -9,8 +9,24 @@
   src: url("Polices/segoeprb.ttf");
 }
 @font-face {
+  font-family: "SCRIPTBL";
+  src: url("Polices/SCRIPTBL.TTF");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("Polices/Quicksand-Regular.otf");
+}
+@font-face {
+  font-family: "SegoePrint";
+  src: url("Polices/segoeprb.ttf");
+}
+@font-face {
   font-family: "AlexBrush-Regular";
   src: url("Polices/AlexBrush-Regular.ttf");
+}
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("Polices/KaushanScript-Regular.otf");
 }
 /*-----------------------------------------------*/
 header, footer, footer a {
@@ -43,7 +59,7 @@ a {
 }
 
 /*Configuration du menu 2                                                                          */
-.menu3 {
+.menu_chic_a_la_francaise {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -51,84 +67,102 @@ a {
   text-align: center;
   margin: 1em 5em 8em 5em;
   padding: 2em 10em 6em 10em;
-  font-family: "AlexBrush-Regular";
-  font-weight: bold;
-  background-color: #f9f9f9;
+  font-family: "Quicksand-Regular";
+  background-color: #fff5fe;
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
 }
-.menu3 p {
-  font-size: 1.3em;
+
+.menu_chic_a_la_francaise--entree {
+  color: #c67412;
 }
-.menu3--entree h3:before {
+
+.menu_chic_a_la_francaise--entree h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: #0022db;
+  background: #c67412;
 }
-.menu3--entree h3:after {
+
+.menu_chic_a_la_francaise--entree h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: #0022db;
+  background: #c67412;
 }
-.menu3--principal h3:before {
+
+.menu_chic_a_la_francaise--principal {
+  color: #a56799;
+}
+
+.menu_chic_a_la_francaise--principal h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: #0670f3;
+  background: #a56799;
 }
-.menu3--principal h3:after {
+
+.menu_chic_a_la_francaise--principal h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: #0670f3;
+  background: #a56799;
 }
-.menu3--dessert h3:before {
+
+.menu_chic_a_la_francaise--dessert {
+  color: #6e4ccc;
+}
+
+.menu_chic_a_la_francaise--dessert h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: #56b3f7;
+  background: #6e4ccc;
 }
-.menu3--dessert h3:after {
+
+.menu_chic_a_la_francaise--dessert h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: #56b3f7;
+  background: #6e4ccc;
 }
-.menu3_titre {
+
+.menu_chic_a_la_francaise_titre {
   font-size: 2em;
   font-weight: bold;
-  background: linear-gradient(to right, #0022db, #56b3f7);
+  background: linear-gradient(to right top, #c67412, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu3_titre_composition {
+
+.menu_chic_a_la_francaise_titre_composition {
   text-align: center;
 }
-.menu3_composition {
+
+.menu_chic_a_la_francaise_composition {
   display: flex;
   justify-content: space-between;
   text-align: start;
 }
-.menu3_composition div {
+
+.menu_chic_a_la_francaise_composition div {
   padding-right: 0.5em;
 }
 
@@ -154,6 +188,7 @@ footer {
 .mentions, .contactez {
   padding: 0.5em 2em 0.5em 2em;
 }
+
 .mentions :hover, .contactez :hover {
   animation: wiggle 0.5s infinite;
 }
@@ -195,5 +230,6 @@ footer {
 }
 /*-------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
+/*# sourceMappingURL=Style_menu2.css.map */
 
-/*# sourceMappingURL=Style_menu3.css.map */
+/*# sourceMappingURL=Style_menu2.css.map */

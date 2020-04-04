@@ -12,6 +12,22 @@
   font-family: "SCRIPTBL";
   src: url("Polices/SCRIPTBL.TTF");
 }
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("Polices/Quicksand-Regular.otf");
+}
+@font-face {
+  font-family: "SegoePrint";
+  src: url("Polices/segoeprb.ttf");
+}
+@font-face {
+  font-family: "AlexBrush-Regular";
+  src: url("Polices/AlexBrush-Regular.ttf");
+}
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("Polices/KaushanScript-Regular.otf");
+}
 /*-----------------------------------------------*/
 header, footer, footer a {
   font-family: "NimbusSanL-Reg";
@@ -43,7 +59,7 @@ a {
 }
 
 /*Configuration du menu 1                                                                       */
-.menu1 {
+.menu_note_enchantee {
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
   display: flex;
   flex: 1;
@@ -56,10 +72,10 @@ a {
   background-color: #fcdfdb;
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
 }
-.menu1 img {
+.menu_note_enchantee img {
   animation: note 3s ease-in-out infinite;
 }
-.menu1 h3:before {
+.menu_note_enchantee h3:before {
   content: "";
   position: absolute;
   height: 5px;
@@ -68,7 +84,7 @@ a {
   right: 100%;
   background: black;
 }
-.menu1 h3:after {
+.menu_note_enchantee h3:after {
   content: "";
   position: absolute;
   height: 5px;
@@ -77,27 +93,27 @@ a {
   left: 100%;
   background: black;
 }
-.menu1_titre {
+.menu_note_enchantee_titre {
   font-size: 2em;
 }
-.menu1_titre_composition {
+.menu_note_enchantee_titre_composition {
   text-align: center;
 }
-.menu1_composition {
+.menu_note_enchantee_composition {
   display: flex;
   justify-content: space-between;
   text-align: start;
 }
-.menu1_composition div {
+.menu_note_enchantee_composition div {
   padding-right: 0.5em;
 }
-.menu1_fin_menu {
+.menu_note_enchantee_fin_menu {
   display: flex;
   justify-content: center;
   font-size: 1.6em;
   margin: 1em 0 1em 0;
 }
-.menu1_fin_menu img {
+.menu_note_enchantee_fin_menu img {
   max-width: 6%;
   padding-right: 0.5em;
 }
@@ -176,4 +192,4 @@ footer {
 /*-------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 
-/*# sourceMappingURL=Style_menu1.css.map */
+/*# sourceMappingURL=Style_menu_note_enchantee.css.map */

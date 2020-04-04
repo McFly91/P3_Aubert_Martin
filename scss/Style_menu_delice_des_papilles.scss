@@ -1,5 +1,18 @@
 ﻿/* Polices d'écritures pour les différents textes */
-    @import "./base/polices";
+    @font-face{
+    font-family: 'NimbusSanL-Reg';
+    src: url('Polices/NimbusSanL-Reg.otf');
+    }
+
+    @font-face{
+        font-family: 'segoeprb';
+        src: url('Polices/segoeprb.ttf');
+    }
+
+    @font-face{
+        font-family: 'AlexBrush-Regular';
+        src: url('Polices/AlexBrush-Regular.ttf');
+    }
 /*-----------------------------------------------*/
 
 // Variables et mixins                                 
@@ -10,10 +23,10 @@
     // Variables des menus
         // Couleurs
         $box-shadow-color: rgba(237, 237, 237, 0.75);
-        $menu-color: #fff5fe;
-        $deco-entree-color: #c67412;
-        $deco-principal-color: #a56799;
-        $deco-dessert-color: #6e4ccc;
+        $menu-color: #f9f9f9;
+        $deco-entree-color: #0022db;
+        $deco-principal-color: #0670f3;
+        $deco-dessert-color: #56b3f7;
         ////////////////////////////////////////////////
         // Dimensions
         $menu-margin: 1em 5em 8em 5em;
@@ -75,7 +88,7 @@ a {
 }
 
 /*Configuration du menu 2                                                                          */
-    .menu2 {
+    .menu_delice_des_papilles {
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -83,13 +96,17 @@ a {
         text-align: center;
         margin: $menu-margin;
         padding: $menu-padding;
-        font-family: 'Quicksand-Regular';
+        font-family: 'AlexBrush-Regular';
+        font-weight: bold;
         background-color: $menu-color;
+
+        p {
+            font-size: 1.3em;
+        }
 
         @include box-shadow;
 
         &--entree {
-            color: $deco-entree-color;
             h3:before {
                 @include deco-menu-right($deco-entree-color)
             } 
@@ -99,7 +116,6 @@ a {
         }
         
         &--principal {
-            color: $deco-principal-color;
             h3:before {
                 @include deco-menu-right($deco-principal-color)
             }
@@ -109,7 +125,6 @@ a {
         }
         
         &--dessert {
-            color: $deco-dessert-color;
             h3:before {
                 @include deco-menu-right($deco-dessert-color)
             }
@@ -121,7 +136,7 @@ a {
         &_titre {
             font-size: 2em;
             font-weight: bold;
-            background: linear-gradient(to right top, $deco-entree-color, $deco-dessert-color);
+            background: linear-gradient(to right, $deco-entree-color, $deco-dessert-color);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             

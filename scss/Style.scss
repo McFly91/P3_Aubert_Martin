@@ -2,128 +2,129 @@
     @import "./base/polices";
 /*-----------------------------------------------*/
 
-header, aside, footer, footer a {
-    font-family: 'NimbusSanL-Reg';
-    color: #fdcb46;
-    background-color: #579c87;
-}
+// Variables et mixins                                 
+    // Variables du header et footer                  
+    @import "./utils/variables_header_footer";
+    ////////////////////////////////////////////////////
+    // Variables de l'index
+    @import "./utils/_variables_index";
+    
+    ///////////////////////////////////////////////////
+    @import "./utils/mixins_common";
+////////////////////////////////////////////////////////
 
-header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-}
+@import "./layouts/body";
 
-body {
-    margin: 0;
-    font-size: 1.4em;
-}
-
-a {
-    text-decoration: none;
-    font-size: 1.5em;
+section {
+    padding-bottom: 2em;
 }
 
 span {
     display: block;
 }
 
-/* Configuration des menus                           */
-    .menu1, .menu2, .menu3, .menu4 {
-        width: 12em;
-        height: 20em;
-        box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+/* Configuration des menus                                                                             */
+    .menu_note_enchantee, .menu_chic_a_la_francaise, .menu_delice_des_papilles, .menu_palette_du_gout {
+        width: $menus-width;
+        height: $menus-height;
+        box-shadow: 0px 0px 10px 3px $box-shadow-color;
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        margin: 1em;
+        margin: $menus-margin;
+
+        a {
+            font-size: 1.5em;
+        }
     }
 
-    /* Configuration de l'affichage des menus 1 et 2 */
-        #menu1_2 {
+    /* Configuration de l'affichage des menus La Note Enchantée et Le Chic à la Française */
+        #menu_note_enchantee_et_chic_a_la_francaise {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .menu1 {
+        .menu_note_enchantee {
             font-family: 'SCRIPTBL';
-            background-color: #fcdfdb;
-        }
+            background-color: $menu-color-note_enchantee;
 
-        .menu1 img {
+            img {
             max-width: 20%;
             animation: note 3s ease-in-out infinite;
-        }
+            }
 
-        @keyframes note {
-            0% {transform: skew(0deg) perspective(0px) translateZ(0px);}
-            50% {transform: skew(5deg) perspective(60px) translateZ(4px);}
-            100% {transform: skew(0deg) perspective(0px) translateZ(0px);}
-        }
-
-        .menu1 a {
+            a {
             font-family: 'segoeprb';
-            color: #3c1218;
+            color: $menu-color-note_enchantee-lien;
             text-transform: uppercase;
+            }
         }
 
-        .menu2 {
+        // Animation de la note de musique sur le menu la Note enchantée
+        @import "./components/_animation_menu_note_enchantee";
+
+        .menu_chic_a_la_francaise {
             font-family: 'Quicksand-Regular';
-            background-color: #fff5fe;
-        }
+            background-color: $menu-color-chic_a_la_francaise;
 
-        .menu2 span {
+            span {
             font-weight: bold;
-            background: linear-gradient(to right, #db8528, #8f5bfe);
+            background: $menu-color-chic_a_la_francaise-degrade;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-        }
+            }
 
-        .menu2 a {
+            a {
             font-family: Georgia;
             font-weight: bold;
-            color: #c77412;
+            color: $menu-color-chic_a_la_francaise-lien;
+            }
         }
-    /*------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------*/
 
-    /* Configuration de l'affichage des menus 3 et 4 */
-        #menu3_4 {
+    /* Configuration de l'affichage des menus delice des paipilles et palette du gout */
+        #menu_delice_des_papilles_et_palette_du_gout {
             display: flex;
             justify-content: center;
         }
 
-        .menu3 {
+        .menu_delice_des_papilles {
             font-family: 'AlexBrush-Regular';
             font-weight: bold;
-            background-color: #f9f9f9;
+            background-color: $menu-color-delice_des_papilles;
+
+            span {
+                font-size: 1.3em;
+                background: $menu-color-delice_des_papilles-degrade;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            a {
+                font-family: 'SegoePrint';
+                color: $menu-color-delice_des_papilles-lien;
+            }
         }
 
-        .menu3 span {
-            font-size: 1.3em;
-            background: linear-gradient(to right, #0022db, #56b3f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .menu3 a {
-            font-family: 'SegoePrint';
-            color: #0887fb;
-        }
-
-        .menu4 {
+        .menu_palette_du_gout {
             font-family: 'KaushanScript-Regular';
-            background-color: #fdfffd;
-        }
+            background-color: $menu-coloc-palette_du_gout;
 
-        .menu4 a {
-            font-family: 'SegoePrint';
-            color: #72bf56;
+            span {
+                background: $menu-coloc-palette_du_gout-degrade;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            a {
+                font-family: 'SegoePrint';
+                color: $menu-coloc-palette_du_gout-lien;
+            }
         }
-    /*------------------------------------------------*/
-/*---------------------------------------------------*/
+    /*--------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
 
 /* Configuration de l'affichage du bloc aside       */
     aside {
@@ -133,13 +134,13 @@ span {
         display: flex;
         justify-content: center;
         margin: auto;
-    }
 
-    aside p {
-        margin: auto;
-        font-size: 1.5em;
+        p {
+            margin: auto;
+            font-size: 1.5em;
+        }
     }
-/*------------------------------------------------*/
+/*---------------------------------------------------*/
 
 /* Configuration de l'alignement du bloc section et du bloc aside */
     #section_aside {
@@ -148,34 +149,6 @@ span {
     }
 /*----------------------------------------------------------------*/
 
-/* Configuration du footer                                         */
-    footer {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 1em;
-    }
-
-    .mentions, .contactez {
-        padding : 0.5em 2em 0.5em 2em;
-    }
-
-    /* Animations sur le footer                                    */    
-        .mentions:hover, .contactez:hover {
-            animation: wiggle 0.5s infinite;
-        }
-
-        @keyframes wiggle {
-            0% { transform: translate(1px, 1px) rotate(0deg); }
-            10% { transform: translate(-1px, -2px) rotate(-1deg); }
-            20% { transform: translate(-3px, 0px) rotate(1deg); }
-            30% { transform: translate(3px, 2px) rotate(0deg); }
-            40% { transform: translate(1px, -1px) rotate(1deg); }
-            50% { transform: translate(-1px, 2px) rotate(-1deg); }
-            60% { transform: translate(-3px, 1px) rotate(0deg); }
-            70% { transform: translate(3px, 1px) rotate(-1deg); }
-            80% { transform: translate(-1px, -1px) rotate(1deg); }
-            90% { transform: translate(1px, 2px) rotate(0deg); }
-            100% { transform: translate(1px, -2px) rotate(-1deg); }
-          }
-    /*-------------------------------------------------------------*/
+/* Configuration du footer                                        */
+    @import "./layouts/footer";
 /*-----------------------------------------------------------------*/

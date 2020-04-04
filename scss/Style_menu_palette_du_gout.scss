@@ -4,16 +4,10 @@
 
 // Variables et mixins                                 
     // Variables du header et footer                  
-        $text-color-header-footer: #fdcb46;
-        $background-color-header-footer: #579c87;
+        @import "./utils/variables_header_footer";
     ////////////////////////////////////////////////////
     // Variables des menus
-        $box-shadow-color: rgba(237, 237, 237, 0.75);
-        $menu-color: #fdfffd;
-        $deco-principal-color: #3d923a;
-        $deco-principal-color-2: #beff7f;  
-        $menu-margin: 1em 5em 8em 5em;
-        $menu-padding: 2em 10em 6em 10em;
+        @import "./utils/variables_menu_palette_du_gout";
     ////////////////////////////////////////////////////
     @import "./utils/mixins_common";
 
@@ -97,4 +91,4 @@
 
 /* Configuration du footer                                        */
   @import "./layouts/footer";
-/*-----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/

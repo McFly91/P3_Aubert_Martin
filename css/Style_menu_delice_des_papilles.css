@@ -9,8 +9,8 @@
   src: url("Polices/segoeprb.ttf");
 }
 @font-face {
-  font-family: "Quicksand-Regular";
-  src: url("Polices/Quicksand-Regular.otf");
+  font-family: "AlexBrush-Regular";
+  src: url("Polices/AlexBrush-Regular.ttf");
 }
 /*-----------------------------------------------*/
 header, footer, footer a {
@@ -43,7 +43,7 @@ a {
 }
 
 /*Configuration du menu 2                                                                          */
-.menu2 {
+.menu_delice_des_papilles {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -51,89 +51,84 @@ a {
   text-align: center;
   margin: 1em 5em 8em 5em;
   padding: 2em 10em 6em 10em;
-  font-family: "Quicksand-Regular";
-  background-color: #fff5fe;
+  font-family: "AlexBrush-Regular";
+  font-weight: bold;
+  background-color: #f9f9f9;
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
 }
-.menu2--entree {
-  color: #c67412;
+.menu_delice_des_papilles p {
+  font-size: 1.3em;
 }
-.menu2--entree h3:before {
+.menu_delice_des_papilles--entree h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: #c67412;
+  background: #0022db;
 }
-.menu2--entree h3:after {
+.menu_delice_des_papilles--entree h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: #c67412;
+  background: #0022db;
 }
-.menu2--principal {
-  color: #a56799;
-}
-.menu2--principal h3:before {
+.menu_delice_des_papilles--principal h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: #a56799;
+  background: #0670f3;
 }
-.menu2--principal h3:after {
+.menu_delice_des_papilles--principal h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: #a56799;
+  background: #0670f3;
 }
-.menu2--dessert {
-  color: #6e4ccc;
-}
-.menu2--dessert h3:before {
+.menu_delice_des_papilles--dessert h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: #6e4ccc;
+  background: #56b3f7;
 }
-.menu2--dessert h3:after {
+.menu_delice_des_papilles--dessert h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: #6e4ccc;
+  background: #56b3f7;
 }
-.menu2_titre {
+.menu_delice_des_papilles_titre {
   font-size: 2em;
   font-weight: bold;
-  background: linear-gradient(to right top, #c67412, #6e4ccc);
+  background: linear-gradient(to right, #0022db, #56b3f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu2_titre_composition {
+.menu_delice_des_papilles_titre_composition {
   text-align: center;
 }
-.menu2_composition {
+.menu_delice_des_papilles_composition {
   display: flex;
   justify-content: space-between;
   text-align: start;
 }
-.menu2_composition div {
+.menu_delice_des_papilles_composition div {
   padding-right: 0.5em;
 }
 
@@ -201,4 +196,4 @@ footer {
 /*-------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 
-/*# sourceMappingURL=Style_menu2.css.map */
+/*# sourceMappingURL=Style_menu_delice_des_papilles.css.map */

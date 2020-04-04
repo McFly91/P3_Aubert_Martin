@@ -1,0 +1,5 @@
+@keyframes note {
+    0% {transform: skew(0deg) perspective(0px) translateZ(0px);}
+    50% {transform: skew(5deg) perspective(60px) translateZ(4px);}
+    100% {transform: skew(0deg) perspective(0px) translateZ(0px);}
+}

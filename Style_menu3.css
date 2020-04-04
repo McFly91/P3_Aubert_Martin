@@ -9,32 +9,14 @@
   src: url("Polices/segoeprb.ttf");
 }
 @font-face {
-  font-family: "SCRIPTBL";
-  src: url("Polices/SCRIPTBL.TTF");
-}
-@font-face {
-  font-family: "Quicksand-Regular";
-  src: url("Polices/Quicksand-Regular.otf");
-}
-@font-face {
-  font-family: "SegoePrint";
-  src: url("Polices/segoeprb.ttf");
-}
-@font-face {
   font-family: "AlexBrush-Regular";
   src: url("Polices/AlexBrush-Regular.ttf");
 }
-@font-face {
-  font-family: "KaushanScript-Regular";
-  src: url("Polices/KaushanScript-Regular.otf");
-}
 /*-----------------------------------------------*/
-header, footer {
-  background-color: #579c87;
-}
-header a, footer a {
+header, footer, footer a {
   font-family: "NimbusSanL-Reg";
   color: #fdcb46;
+  background-color: #579c87;
 }
 
 body {
@@ -45,6 +27,7 @@ body {
 header {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 0;
 }
 
@@ -56,10 +39,11 @@ h2 {
 
 a {
   text-decoration: none;
+  font-size: 1.5em;
 }
 
 /*Configuration du menu 2                                                                          */
-.menu_palette_du_gout {
+.menu_delice_des_papilles {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -67,80 +51,95 @@ a {
   text-align: center;
   margin: 1em 5em 8em 5em;
   padding: 2em 10em 6em 10em;
-  font-family: "KaushanScript-Regular";
-  background-color: #fdfffd;
+  font-family: "AlexBrush-Regular";
+  font-weight: bold;
+  background-color: #f9f9f9;
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
 }
-.menu_palette_du_gout--entree h3:before {
+
+.menu_delice_des_papilles p {
+  font-size: 1.3em;
+}
+
+.menu_delice_des_papilles--entree h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: linear-gradient(90deg, #3d923a, #beff7f);
+  background: #0022db;
 }
-.menu_palette_du_gout--entree h3:after {
+
+.menu_delice_des_papilles--entree h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: linear-gradient(-90deg, #3d923a, #beff7f);
+  background: #0022db;
 }
-.menu_palette_du_gout--principal h3:before {
+
+.menu_delice_des_papilles--principal h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: linear-gradient(90deg, #3d923a, #beff7f);
+  background: #0670f3;
 }
-.menu_palette_du_gout--principal h3:after {
+
+.menu_delice_des_papilles--principal h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: linear-gradient(-90deg, #3d923a, #beff7f);
+  background: #0670f3;
 }
-.menu_palette_du_gout--dessert h3:before {
+
+.menu_delice_des_papilles--dessert h3:before {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   right: 100%;
-  background: linear-gradient(90deg, #3d923a, #beff7f);
+  background: #56b3f7;
 }
-.menu_palette_du_gout--dessert h3:after {
+
+.menu_delice_des_papilles--dessert h3:after {
   content: "";
   position: absolute;
   height: 5px;
   width: 100%;
   top: 50%;
   left: 100%;
-  background: linear-gradient(-90deg, #3d923a, #beff7f);
+  background: #56b3f7;
 }
-.menu_palette_du_gout_titre {
+
+.menu_delice_des_papilles_titre {
   font-size: 2em;
   font-weight: bold;
-  background: linear-gradient(90deg, #3d923a, #beff7f);
+  background: linear-gradient(to right, #0022db, #56b3f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu_palette_du_gout_titre_composition {
+
+.menu_delice_des_papilles_titre_composition {
   text-align: center;
 }
-.menu_palette_du_gout_composition {
+
+.menu_delice_des_papilles_composition {
   display: flex;
   justify-content: space-between;
   text-align: start;
 }
-.menu_palette_du_gout_composition div {
+
+.menu_delice_des_papilles_composition div {
   padding-right: 0.5em;
 }
 
@@ -161,14 +160,12 @@ footer {
   width: 100%;
   bottom: 0;
 }
-footer a {
-  font-size: 1.5em;
-}
 
 /* Animations sur le footer                                   */
 .mentions, .contactez {
   padding: 0.5em 2em 0.5em 2em;
 }
+
 .mentions :hover, .contactez :hover {
   animation: wiggle 0.5s infinite;
 }
@@ -209,6 +206,7 @@ footer a {
   }
 }
 /*-------------------------------------------------------------*/
-/*----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*# sourceMappingURL=Style_menu3.css.map */
 
-/*# sourceMappingURL=Style_menu_palette_du_gout.css.map */
+/*# sourceMappingURL=Style_menu3.css.map */

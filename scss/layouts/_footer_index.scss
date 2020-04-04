@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.mentions, .contactez {
+    padding : 0.5em 2em 0.5em 2em;
+}
+
+/* Animations sur le footer                                   */
+        @import "./components/animation_footer";
+/*-------------------------------------------------------------*/
