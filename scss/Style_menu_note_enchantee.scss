@@ -4,7 +4,7 @@
 
 // Variables et mixins                                 
     // Variables du header et footer                  
-        @import "./utils/_variables_header_footer";
+        @import "./utils/variables_header_footer";
     ///////////////////////////////////////////////////
     // Variables des menus
         @import "./utils/variables_menu_note_enchantee";
@@ -16,7 +16,7 @@
 
 @import "./layouts/body";
 
-/*Configuration du menu 1                                                                       */
+/*Configuration du menu la note enchantée                                                                       */
     .menu_note_enchantee {
         box-shadow: 0px 0px 10px 3px $box-shadow-color;
         display: flex;

@@ -29,10 +29,12 @@
   src: url("Polices/KaushanScript-Regular.otf");
 }
 /*-----------------------------------------------*/
-header, footer, footer a {
+header, footer {
+  background-color: #579c87;
+}
+header a, footer a {
   font-family: "NimbusSanL-Reg";
   color: #fdcb46;
-  background-color: #579c87;
 }
 
 body {
@@ -43,7 +45,6 @@ body {
 header {
   display: flex;
   justify-content: center;
-  text-align: center;
   margin: 0;
 }
 
@@ -55,10 +56,9 @@ h2 {
 
 a {
   text-decoration: none;
-  font-size: 1.5em;
 }
 
-/*Configuration du menu 2                                                                          */
+/*Configuration du menu chic à la française                                                                          */
 .menu_chic_a_la_francaise {
   display: flex;
   flex: 1;
@@ -170,6 +170,9 @@ footer {
   width: 100%;
   bottom: 0;
 }
+footer a {
+  font-size: 1.5em;
+}
 
 /* Animations sur le footer                                   */
 .mentions, .contactez {
@@ -215,6 +218,6 @@ footer {
   }
 }
 /*-------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
 
-/*# sourceMappingURL=Style_menu_chic_a_la_francaise.css.map */
+/*# sourceMappingURL=style_menu_chic_a_la_francaise.css.map */
