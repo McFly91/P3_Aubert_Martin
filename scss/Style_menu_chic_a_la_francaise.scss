@@ -1,6 +1,6 @@
 ﻿/* Polices d'écritures pour les différents textes */
     @import "./base/polices";
-/*-----------------------------------------------*/
+/*------------------------------------------------*/
 
 // Variables et mixins                                 
     // Variables du header et footer                  
@@ -16,7 +16,7 @@
 
 @import "./layouts/body";
 
-/*Configuration du menu chic à la française                                                                          */
+/* Configuration du menu chic à la française                                                                         */
     .menu_chic_a_la_francaise {
         display: flex;
         flex: 1;
@@ -63,7 +63,7 @@
         &_titre {
             font-size: 2em;
             font-weight: bold;
-            background: linear-gradient(to right top, $deco-entree-color, $deco-dessert-color);
+            background: $menu-color-chic_a_la_francaise-degrade;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             
@@ -76,6 +76,10 @@
             display: flex;
             justify-content: space-between;
             text-align: start;
+
+            &_prix {
+                text-align: right;
+            }
 
             div {
                 padding-right: 0.5em;
@@ -93,5 +97,5 @@
 /*-----------------------------------------------------------------------------------------------*/
 
 /* Configuration du footer                                        */
-@import "./layouts/footer";
+    @import "./layouts/footer";
 /*----------------------------------------------------------------*/

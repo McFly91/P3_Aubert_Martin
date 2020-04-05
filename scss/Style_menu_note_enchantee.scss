@@ -55,6 +55,10 @@
             justify-content: space-between;
             text-align: start;
 
+            &_prix {
+                text-align: right;
+            }
+
             div {
                 padding-right: 0.5em;
             }

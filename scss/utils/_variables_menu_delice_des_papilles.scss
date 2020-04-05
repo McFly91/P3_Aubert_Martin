@@ -1,0 +1,11 @@
+// Couleurs
+    $box-shadow-color: rgba(237, 237, 237, 0.75);
+    $menu-color-delice_des_papilles:#f9f9f9;
+    $deco-entree-color: #0022db;
+    $deco-principal-color: #0670f3;
+    $deco-dessert-color: #56b3f7;
+    $menu-color-delice_des_papilles-degrade: linear-gradient(to right, $deco-entree-color, $deco-dessert-color);
+
+// Margin et Padding
+    $menu-margin: 1em 5em 8em 5em;
+    $menu-padding: 2em 10em 6em 10em;

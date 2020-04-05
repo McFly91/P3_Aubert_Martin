@@ -104,6 +104,9 @@ a {
   justify-content: space-between;
   text-align: start;
 }
+.menu_note_enchantee_composition_prix {
+  text-align: right;
+}
 .menu_note_enchantee_composition div {
   padding-right: 0.5em;
 }

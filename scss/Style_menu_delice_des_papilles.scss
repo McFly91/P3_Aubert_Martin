@@ -1,93 +1,22 @@
 ﻿/* Polices d'écritures pour les différents textes */
-    @font-face{
-    font-family: 'NimbusSanL-Reg';
-    src: url('Polices/NimbusSanL-Reg.otf');
-    }
-
-    @font-face{
-        font-family: 'segoeprb';
-        src: url('Polices/segoeprb.ttf');
-    }
-
-    @font-face{
-        font-family: 'AlexBrush-Regular';
-        src: url('Polices/AlexBrush-Regular.ttf');
-    }
-/*-----------------------------------------------*/
+    @import "./base/polices";
+/*------------------------------------------------*/
 
 // Variables et mixins                                 
     // Variables du header et footer                  
-        $text-color-header-footer: #fdcb46;
-        $background-color-header-footer: #579c87;
+    @import "./utils/variables_header_footer";
     ////////////////////////////////////////////////////
     // Variables des menus
-        // Couleurs
-        $box-shadow-color: rgba(237, 237, 237, 0.75);
-        $menu-color: #f9f9f9;
-        $deco-entree-color: #0022db;
-        $deco-principal-color: #0670f3;
-        $deco-dessert-color: #56b3f7;
-        ////////////////////////////////////////////////
-        // Dimensions
-        $menu-margin: 1em 5em 8em 5em;
-        $menu-padding: 2em 10em 6em 10em;
-        ////////////////////////////////////////////////
+    @import "./utils/variables_menu_delice_des_papilles";
     ////////////////////////////////////////////////////
-    @mixin box-shadow {
-        box-shadow: 0px 0px 10px 3px $box-shadow-color;
-    }
+@import "./utils/mixins_common";
 
-    @mixin deco-menu-right($color) {
-        content: "";
-        position: absolute;
-        height: 5px;
-        width: 100%;
-        top: 50%;
-        right: 100%;
-        background: $color;
-    }
-
-    @mixin deco-menu-left($color) {
-        content: "";
-        position: absolute;
-        height: 5px;
-        width: 100%;
-        top: 50%;
-        left: 100%;
-        background: $color;
-    }
+@import "./utils/mixins_menu_delice_des_papilles";
 ////////////////////////////////////////////////////////
 
-header, footer, footer a {
-    font-family: 'NimbusSanL-Reg';
-    color: $text-color-header-footer;
-    background-color: $background-color-header-footer;
-}
+@import "./layouts/body";
 
-body {
-    margin: 0;
-    font-size: 1.4em;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-}
-
-h2 {
-    font-family: 'NimbusSanL-Reg';
-    text-align: center;
-    margin-bottom: 0em;
-}
-
-a {
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-/*Configuration du menu 2                                                                          */
+/* Configuration du Délice des papilles                                                                */
     .menu_delice_des_papilles {
         display: flex;
         flex: 1;
@@ -98,7 +27,7 @@ a {
         padding: $menu-padding;
         font-family: 'AlexBrush-Regular';
         font-weight: bold;
-        background-color: $menu-color;
+        background-color: $menu-color-delice_des_papilles;
 
         p {
             font-size: 1.3em;
@@ -136,7 +65,7 @@ a {
         &_titre {
             font-size: 2em;
             font-weight: bold;
-            background: linear-gradient(to right, $deco-entree-color, $deco-dessert-color);
+            background: $menu-color-delice_des_papilles-degrade;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             
@@ -149,6 +78,10 @@ a {
             display: flex;
             justify-content: space-between;
             text-align: start;
+
+            &_prix {
+                text-align: right;
+            }
 
             div {
                 padding-right: 0.5em;
@@ -166,35 +99,5 @@ a {
 /*-----------------------------------------------------------------------------------------------*/
 
 /* Configuration du footer                                        */
-    footer {
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-    }
-
-    /* Animations sur le footer                                   */
-        .mentions, .contactez {
-            padding : 0.5em 2em 0.5em 2em;
-
-            :hover {
-                animation: wiggle 0.5s infinite;
-            }
-        }
-
-        @keyframes wiggle {
-            0% { transform: translate(1px, 1px) rotate(0deg); }
-            10% { transform: translate(-1px, -2px) rotate(-1deg); }
-            20% { transform: translate(-3px, 0px) rotate(1deg); }
-            30% { transform: translate(3px, 2px) rotate(0deg); }
-            40% { transform: translate(1px, -1px) rotate(1deg); }
-            50% { transform: translate(-1px, 2px) rotate(-1deg); }
-            60% { transform: translate(-3px, 1px) rotate(0deg); }
-            70% { transform: translate(3px, 1px) rotate(-1deg); }
-            80% { transform: translate(-1px, -1px) rotate(1deg); }
-            90% { transform: translate(1px, 2px) rotate(0deg); }
-            100% { transform: translate(1px, -2px) rotate(-1deg); }
-            }
-    /*-------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
+    @import "./layouts/footer";
+/*----------------------------------------------------------------*/

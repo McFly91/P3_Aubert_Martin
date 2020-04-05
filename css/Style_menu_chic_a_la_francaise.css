@@ -28,7 +28,7 @@
   font-family: "KaushanScript-Regular";
   src: url("Polices/KaushanScript-Regular.otf");
 }
-/*-----------------------------------------------*/
+/*------------------------------------------------*/
 header, footer {
   background-color: #579c87;
 }
@@ -58,7 +58,7 @@ a {
   text-decoration: none;
 }
 
-/*Configuration du menu chic à la française                                                                          */
+/* Configuration du menu chic à la française                                                                         */
 .menu_chic_a_la_francaise {
   display: flex;
   flex: 1;
@@ -148,6 +148,9 @@ a {
   display: flex;
   justify-content: space-between;
   text-align: start;
+}
+.menu_chic_a_la_francaise_composition_prix {
+  text-align: right;
 }
 .menu_chic_a_la_francaise_composition div {
   padding-right: 0.5em;
