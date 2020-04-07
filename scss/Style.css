@@ -70,10 +70,9 @@ a {
   text-decoration: none;
 }
 
-section {
-  padding-bottom: 2em;
-}
-
+/*section {
+    padding-bottom: 2em;
+}*/
 span {
   display: block;
 }
@@ -182,7 +181,7 @@ span {
 }
 
 /*----------------------------------------------------------------------------------------*/
-/* Configuration de l'affichage des menus delice des paipilles et palette du gout */
+/* Configuration de l'affichage des menus delice des papilles et palette du gout */
 #menu_delice_des_papilles_et_palette_du_gout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,11 +241,55 @@ aside {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+  margin-bottom: 6em;
+  background-color: #579c87;
+  font-family: 'NimbusSanL-Reg';
+  color: #fdcb46;
 }
 
 aside p {
   margin: auto;
   font-size: 1.5em;
+}
+
+aside p span {
+  display: inline;
+  -webkit-animation: animation_aside 1.5s infinite both;
+          animation: animation_aside 1.5s infinite both;
+}
+
+aside p span:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+aside p span:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+@-webkit-keyframes animation_aside {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+@keyframes animation_aside {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
 }
 
 /*---------------------------------------------------*/
