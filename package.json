@@ -8,5 +8,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McFly91/P3_Aubert_Martin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/McFly91/P3_Aubert_Martin/issues"
+  },
+  "homepage": "https://github.com/McFly91/P3_Aubert_Martin#readme",
   "description": ""
 }

@@ -32,28 +32,28 @@
 
         &--entree {
             h3:before {
-                @include deco-menu-right
+                @include deco-menu-left
             } 
             h3:after {
-                @include deco-menu-left
+                @include deco-menu-right
             }
         }
         
         &--principal {
             h3:before {
-                @include deco-menu-right
+                @include deco-menu-left
             }
             h3:after {
-                @include deco-menu-left
+                @include deco-menu-right
             }
         }
         
         &--dessert {
             h3:before {
-                @include deco-menu-right
+                @include deco-menu-left
             }
             h3:after {
-                @include deco-menu-left
+                @include deco-menu-right
             }
         }
         

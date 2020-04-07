@@ -1,0 +1,23 @@
+@mixin deco-menu-right($color) {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 5em;
+    width: 100%;
+    right: 100%;
+    clip-path: polygon(90% 0, 100% 5%, 90% 10%, 0 5%);
+    -webkit-clip-path: polygon(90% 0, 100% 5%, 90% 10%, 0 5%);
+    background-color: $color;
+}
+
+@mixin deco-menu-left($color) {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 5em;
+    width: 100%;
+    left: 100%;
+    clip-path: polygon(10% 0, 100% 5%, 10% 10%, 0 5%);
+    -webkit-clip-path: polygon(10% 0, 100% 5%, 10% 10%, 0 5%);
+    background-color: $color;
+}

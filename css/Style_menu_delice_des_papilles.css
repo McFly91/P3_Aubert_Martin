@@ -32,6 +32,7 @@
 header, footer {
   background-color: #579c87;
 }
+
 header a, footer a {
   font-family: "NimbusSanL-Reg";
   color: #fdcb46;
@@ -43,7 +44,11 @@ body {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 0;
 }
@@ -60,9 +65,18 @@ a {
 
 /* Configuration du Délice des papilles                                                                */
 .menu_delice_des_papilles {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   margin: 1em 5em 8em 5em;
@@ -70,83 +84,107 @@ a {
   font-family: "AlexBrush-Regular";
   font-weight: bold;
   background-color: #f9f9f9;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
 }
+
 .menu_delice_des_papilles p {
   font-size: 1.3em;
 }
+
 .menu_delice_des_papilles--entree h3:before {
   content: "";
   position: absolute;
-  height: 5px;
+  height: 6px;
   width: 100%;
   top: 50%;
   right: 100%;
   background: #0022db;
+  border-radius: 0% 50% 0 50%/0 50% 0% 50%;
 }
+
 .menu_delice_des_papilles--entree h3:after {
   content: "";
   position: absolute;
-  height: 5px;
+  height: 6px;
   width: 100%;
   top: 50%;
   left: 100%;
   background: #0022db;
+  border-radius: 50% 0% 50% 0%/50% 0% 50% 0%;
 }
+
 .menu_delice_des_papilles--principal h3:before {
   content: "";
   position: absolute;
-  height: 5px;
+  height: 6px;
   width: 100%;
   top: 50%;
   right: 100%;
   background: #0670f3;
+  border-radius: 0% 50% 0 50%/0 50% 0% 50%;
 }
+
 .menu_delice_des_papilles--principal h3:after {
   content: "";
   position: absolute;
-  height: 5px;
+  height: 6px;
   width: 100%;
   top: 50%;
   left: 100%;
   background: #0670f3;
+  border-radius: 50% 0% 50% 0%/50% 0% 50% 0%;
 }
+
 .menu_delice_des_papilles--dessert h3:before {
   content: "";
   position: absolute;
-  height: 5px;
+  height: 6px;
   width: 100%;
   top: 50%;
   right: 100%;
   background: #56b3f7;
+  border-radius: 0% 50% 0 50%/0 50% 0% 50%;
 }
+
 .menu_delice_des_papilles--dessert h3:after {
   content: "";
   position: absolute;
-  height: 5px;
+  height: 6px;
   width: 100%;
   top: 50%;
   left: 100%;
   background: #56b3f7;
+  border-radius: 50% 0% 50% 0%/50% 0% 50% 0%;
 }
+
 .menu_delice_des_papilles_titre {
   font-size: 2em;
   font-weight: bold;
+  background: -webkit-gradient(linear, left top, right top, from(#0022db), to(#56b3f7));
   background: linear-gradient(to right, #0022db, #56b3f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .menu_delice_des_papilles_titre_composition {
   text-align: center;
 }
+
 .menu_delice_des_papilles_composition {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: start;
 }
+
 .menu_delice_des_papilles_composition_prix {
   text-align: right;
 }
+
 .menu_delice_des_papilles_composition div {
   padding-right: 0.5em;
 }
@@ -162,12 +200,17 @@ h3 {
 /*-----------------------------------------------------------------------------------------------*/
 /* Configuration du footer                                        */
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   bottom: 0;
 }
+
 footer a {
   font-size: 1.5em;
 }
@@ -176,46 +219,106 @@ footer a {
 .mentions, .contactez {
   padding: 0.5em 2em 0.5em 2em;
 }
+
 .mentions :hover, .contactez :hover {
+  -webkit-animation: wiggle 0.5s infinite;
   animation: wiggle 0.5s infinite;
 }
 
-@keyframes wiggle {
+@-webkit-keyframes wiggle {
   0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
     transform: translate(1px, 1px) rotate(0deg);
   }
   10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
     transform: translate(-1px, -2px) rotate(-1deg);
   }
   20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
     transform: translate(-3px, 0px) rotate(1deg);
   }
   30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
     transform: translate(3px, 2px) rotate(0deg);
   }
   40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
     transform: translate(1px, -1px) rotate(1deg);
   }
   50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
     transform: translate(-1px, 2px) rotate(-1deg);
   }
   60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
     transform: translate(-3px, 1px) rotate(0deg);
   }
   70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
     transform: translate(3px, 1px) rotate(-1deg);
   }
   80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
     transform: translate(-1px, -1px) rotate(1deg);
   }
   90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
     transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 /*-------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
+/*# sourceMappingURL=Style_menu_delice_des_papilles.css.map */
 
 /*# sourceMappingURL=style_menu_delice_des_papilles.css.map */
