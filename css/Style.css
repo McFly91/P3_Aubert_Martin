@@ -63,10 +63,6 @@ a {
   text-decoration: none;
 }
 
-span {
-  display: block;
-}
-
 /* Configuration des menus                                                                             */
 .menu_note_enchantee, .menu_chic_a_la_francaise, .menu_delice_des_papilles, .menu_palette_du_gout {
   width: 12em;
@@ -89,6 +85,24 @@ span {
 
 .menu_note_enchantee a, .menu_chic_a_la_francaise a, .menu_delice_des_papilles a, .menu_palette_du_gout a {
   font-size: 1.5em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.menu_note_enchantee a:hover, .menu_chic_a_la_francaise a:hover, .menu_delice_des_papilles a:hover, .menu_palette_du_gout a:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.menu_note_enchantee span, .menu_chic_a_la_francaise span, .menu_delice_des_papilles span, .menu_palette_du_gout span {
+  display: block;
 }
 
 /* Configuration de l'affichage des menus La Note Enchantée et Le Chic à la Française */

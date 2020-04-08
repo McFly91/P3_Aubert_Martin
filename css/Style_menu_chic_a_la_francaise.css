@@ -32,7 +32,6 @@
 header, footer {
   background-color: #579c87;
 }
-
 header a, footer a {
   font-family: "NimbusSanL-Reg";
   color: #fdcb46;
@@ -44,11 +43,7 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin: 0;
 }
@@ -65,32 +60,28 @@ a {
 
 /* Configuration du menu chic à la française                                                                         */
 .menu_chic_a_la_francaise {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   margin: 1em 5em 8em 5em;
   padding: 2em 10em 6em 10em;
   font-family: "Quicksand-Regular";
   background-color: #fff5fe;
-  -webkit-box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
 }
-
 .menu_chic_a_la_francaise--entree {
   color: #c67412;
 }
-
+.menu_chic_a_la_francaise--entree span {
+  background: linear-gradient(to top, #c67412 0%, #c67412 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s;
+}
+.menu_chic_a_la_francaise--entree span:hover {
+  background-size: 100% 100%;
+}
 .menu_chic_a_la_francaise--entree h3:before {
   content: "";
   position: absolute;
@@ -102,7 +93,6 @@ a {
   -webkit-clip-path: polygon(90% 0, 100% 5%, 90% 10%, 0 5%);
   background-color: #c67412;
 }
-
 .menu_chic_a_la_francaise--entree h3:after {
   content: "";
   position: absolute;
@@ -114,11 +104,17 @@ a {
   -webkit-clip-path: polygon(10% 0, 100% 5%, 10% 10%, 0 5%);
   background-color: #c67412;
 }
-
 .menu_chic_a_la_francaise--principal {
   color: #a56799;
 }
-
+.menu_chic_a_la_francaise--principal span {
+  background: linear-gradient(to top, #a56799 0%, #a56799 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s;
+}
+.menu_chic_a_la_francaise--principal span:hover {
+  background-size: 100% 100%;
+}
 .menu_chic_a_la_francaise--principal h3:before {
   content: "";
   position: absolute;
@@ -130,7 +126,6 @@ a {
   -webkit-clip-path: polygon(90% 0, 100% 5%, 90% 10%, 0 5%);
   background-color: #a56799;
 }
-
 .menu_chic_a_la_francaise--principal h3:after {
   content: "";
   position: absolute;
@@ -142,11 +137,17 @@ a {
   -webkit-clip-path: polygon(10% 0, 100% 5%, 10% 10%, 0 5%);
   background-color: #a56799;
 }
-
 .menu_chic_a_la_francaise--dessert {
   color: #6e4ccc;
 }
-
+.menu_chic_a_la_francaise--dessert span {
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s;
+}
+.menu_chic_a_la_francaise--dessert span:hover {
+  background-size: 100% 100%;
+}
 .menu_chic_a_la_francaise--dessert h3:before {
   content: "";
   position: absolute;
@@ -158,7 +159,6 @@ a {
   -webkit-clip-path: polygon(90% 0, 100% 5%, 90% 10%, 0 5%);
   background-color: #6e4ccc;
 }
-
 .menu_chic_a_la_francaise--dessert h3:after {
   content: "";
   position: absolute;
@@ -170,34 +170,24 @@ a {
   -webkit-clip-path: polygon(10% 0, 100% 5%, 10% 10%, 0 5%);
   background-color: #6e4ccc;
 }
-
 .menu_chic_a_la_francaise_titre {
   font-size: 2em;
   font-weight: bold;
-  background: -webkit-gradient(linear, left bottom, right top, from(#c67412), to(#6e4ccc));
   background: linear-gradient(to right top, #c67412, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .menu_chic_a_la_francaise_titre_composition {
   text-align: center;
 }
-
 .menu_chic_a_la_francaise_composition {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: start;
 }
-
 .menu_chic_a_la_francaise_composition_prix {
   text-align: right;
 }
-
 .menu_chic_a_la_francaise_composition div {
   padding-right: 0.5em;
 }
@@ -213,17 +203,12 @@ h3 {
 /*-----------------------------------------------------------------------------------------------*/
 /* Configuration du footer                                        */
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   bottom: 0;
 }
-
 footer a {
   font-size: 1.5em;
 }
@@ -232,106 +217,46 @@ footer a {
 .mentions, .contactez {
   padding: 0.5em 2em 0.5em 2em;
 }
-
 .mentions :hover, .contactez :hover {
-  -webkit-animation: wiggle 0.5s infinite;
   animation: wiggle 0.5s infinite;
 }
 
-@-webkit-keyframes wiggle {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
 @keyframes wiggle {
   0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
     transform: translate(1px, 1px) rotate(0deg);
   }
   10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
     transform: translate(-1px, -2px) rotate(-1deg);
   }
   20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
     transform: translate(-3px, 0px) rotate(1deg);
   }
   30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
     transform: translate(3px, 2px) rotate(0deg);
   }
   40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
     transform: translate(1px, -1px) rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
     transform: translate(-1px, 2px) rotate(-1deg);
   }
   60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
     transform: translate(-3px, 1px) rotate(0deg);
   }
   70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
     transform: translate(3px, 1px) rotate(-1deg);
   }
   80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
     transform: translate(-1px, -1px) rotate(1deg);
   }
   90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
     transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 /*-------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
-/*# sourceMappingURL=Style_menu_chic_a_la_francaise.css.map */
 
-/*# sourceMappingURL=style_menu_chic_a_la_francaise.css.map */
+/*# sourceMappingURL=Style_menu_chic_a_la_francaise.css.map */

@@ -31,7 +31,10 @@
         @include box-shadow;
 
         &--entree {
-            color: $deco-entree-color;
+            color: $deco-entree-color; 
+
+            @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_entree";
+
             h3:before {
                 @include deco-menu-right($deco-entree-color)
             } 
@@ -42,6 +45,9 @@
         
         &--principal {
             color: $deco-principal-color;
+
+            @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_principal";
+
             h3:before {
                 @include deco-menu-right($deco-principal-color)
             }
@@ -52,6 +58,9 @@
         
         &--dessert {
             color: $deco-dessert-color;
+
+            @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_dessert";
+
             h3:before {
                 @include deco-menu-right($deco-dessert-color)
             }

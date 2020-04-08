@@ -1,0 +1,10 @@
+// Plat
+span {
+    background: linear-gradient(to top, $deco-principal-color 0%, $deco-principal-color 8%, transparent 8.01%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.5s;
+
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }

@@ -15,10 +15,6 @@
 
 @import "./layouts/body";
 
-span {
-    display: block;
-}
-
 /* Configuration des menus                                                                             */
     .menu_note_enchantee, .menu_chic_a_la_francaise, .menu_delice_des_papilles, .menu_palette_du_gout {
         width: $menus-width;
@@ -32,6 +28,17 @@ span {
 
         a {
             font-size: 1.5em;
+            display: inline-flex;
+            transform: scale(1);
+            transition: transform 1s;
+            
+            &:hover {
+                transform: scale(1.4);
+            }
+        }
+
+        span {
+            display: block;
         }
     }
 

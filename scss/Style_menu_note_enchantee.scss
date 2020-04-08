@@ -35,6 +35,8 @@
 
         @include box-shadow;
 
+        @import "./components/transition_menu_note_enchantee";
+
         h3:before {
             @include deco-menu-right($deco-principal-color)
         }
