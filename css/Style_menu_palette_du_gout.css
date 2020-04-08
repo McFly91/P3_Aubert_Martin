@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Polices d'écritures pour les différents textes */
 @font-face {
+<<<<<<< HEAD
   font-family: 'NimbusSanL-Reg';
   src: url("Polices/NimbusSanL-Reg.otf");
 }
@@ -35,63 +36,135 @@
   src: url("Polices/KaushanScript-Regular.otf");
 }
 
+=======
+  font-family: "NimbusSanL-Reg";
+  src: url("Polices/NimbusSanL-Reg.otf");
+}
+@font-face {
+  font-family: "segoeprb";
+  src: url("Polices/segoeprb.ttf");
+}
+@font-face {
+  font-family: "SCRIPTBL";
+  src: url("Polices/SCRIPTBL.TTF");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("Polices/Quicksand-Regular.otf");
+}
+@font-face {
+  font-family: "SegoePrint";
+  src: url("Polices/segoeprb.ttf");
+}
+@font-face {
+  font-family: "AlexBrush-Regular";
+  src: url("Polices/AlexBrush-Regular.ttf");
+}
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("Polices/KaushanScript-Regular.otf");
+}
+>>>>>>> dev
 /*-----------------------------------------------*/
 @-webkit-keyframes animation_left {
   0% {
     -webkit-transform: scaleX(0);
+<<<<<<< HEAD
             transform: scaleX(0);
     -webkit-transform-origin: right;
             transform-origin: right;
+=======
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+>>>>>>> dev
     border-radius: 0%;
   }
   25% {
     -webkit-transform: scaleX(0.5);
+<<<<<<< HEAD
             transform: scaleX(0.5);
+=======
+    transform: scaleX(0.5);
+>>>>>>> dev
     border-radius: 50%;
   }
   50% {
     -webkit-transform: scaleX(1);
+<<<<<<< HEAD
             transform: scaleX(1);
+=======
+    transform: scaleX(1);
+>>>>>>> dev
     border-radius: 75%;
   }
   75% {
     -webkit-transform: scaleX(0.5);
+<<<<<<< HEAD
             transform: scaleX(0.5);
+=======
+    transform: scaleX(0.5);
+>>>>>>> dev
     border-radius: 50%;
   }
   100% {
     -webkit-transform: scaleX(0);
+<<<<<<< HEAD
             transform: scaleX(0);
     -webkit-transform-origin: right;
             transform-origin: right;
+=======
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+>>>>>>> dev
     border-radius: 0%;
   }
 }
 @keyframes animation_left {
   0% {
     -webkit-transform: scaleX(0);
+<<<<<<< HEAD
             transform: scaleX(0);
     -webkit-transform-origin: right;
             transform-origin: right;
+=======
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+>>>>>>> dev
     border-radius: 0%;
   }
   25% {
     -webkit-transform: scaleX(0.5);
+<<<<<<< HEAD
             transform: scaleX(0.5);
+=======
+    transform: scaleX(0.5);
+>>>>>>> dev
     border-radius: 50%;
   }
   50% {
     -webkit-transform: scaleX(1);
+<<<<<<< HEAD
             transform: scaleX(1);
+=======
+    transform: scaleX(1);
+>>>>>>> dev
     border-radius: 75%;
   }
   75% {
     -webkit-transform: scaleX(0.5);
+<<<<<<< HEAD
             transform: scaleX(0.5);
+=======
+    transform: scaleX(0.5);
+>>>>>>> dev
     border-radius: 50%;
   }
   100% {
     -webkit-transform: scaleX(0);
+<<<<<<< HEAD
             transform: scaleX(0);
     -webkit-transform-origin: right;
             transform-origin: right;
@@ -105,25 +178,52 @@
             transform: scaleX(0);
     -webkit-transform-origin: left;
             transform-origin: left;
+=======
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    border-radius: 0%;
+  }
+}
+@-webkit-keyframes animation_right {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+>>>>>>> dev
     border-radius: 0%;
   }
   25% {
     -webkit-transform: scaleX(0.5);
+<<<<<<< HEAD
             transform: scaleX(0.5);
+=======
+    transform: scaleX(0.5);
+>>>>>>> dev
     border-radius: 50%;
   }
   50% {
     -webkit-transform: scaleX(1);
+<<<<<<< HEAD
             transform: scaleX(1);
+=======
+    transform: scaleX(1);
+>>>>>>> dev
     border-radius: 75%;
   }
   75% {
     -webkit-transform: scaleX(0.5);
+<<<<<<< HEAD
             transform: scaleX(0.5);
+=======
+    transform: scaleX(0.5);
+>>>>>>> dev
     border-radius: 50%;
   }
   100% {
     -webkit-transform: scaleX(0);
+<<<<<<< HEAD
             transform: scaleX(0);
     -webkit-transform-origin: left;
             transform-origin: left;
@@ -137,25 +237,52 @@
             transform: scaleX(0);
     -webkit-transform-origin: left;
             transform-origin: left;
+=======
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    border-radius: 0%;
+  }
+}
+@keyframes animation_right {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+>>>>>>> dev
     border-radius: 0%;
   }
   25% {
     -webkit-transform: scaleX(0.5);
+<<<<<<< HEAD
             transform: scaleX(0.5);
+=======
+    transform: scaleX(0.5);
+>>>>>>> dev
     border-radius: 50%;
   }
   50% {
     -webkit-transform: scaleX(1);
+<<<<<<< HEAD
             transform: scaleX(1);
+=======
+    transform: scaleX(1);
+>>>>>>> dev
     border-radius: 75%;
   }
   75% {
     -webkit-transform: scaleX(0.5);
+<<<<<<< HEAD
             transform: scaleX(0.5);
+=======
+    transform: scaleX(0.5);
+>>>>>>> dev
     border-radius: 50%;
   }
   100% {
     -webkit-transform: scaleX(0);
+<<<<<<< HEAD
             transform: scaleX(0);
     -webkit-transform-origin: left;
             transform-origin: left;
@@ -163,12 +290,24 @@
   }
 }
 
+=======
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    border-radius: 0%;
+  }
+}
+>>>>>>> dev
 header, footer {
   background-color: #579c87;
 }
 
 header a, footer a {
+<<<<<<< HEAD
   font-family: 'NimbusSanL-Reg';
+=======
+  font-family: "NimbusSanL-Reg";
+>>>>>>> dev
   color: #fdcb46;
 }
 
@@ -182,13 +321,22 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+<<<<<<< HEAD
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> dev
   margin: 0;
 }
 
 h2 {
+<<<<<<< HEAD
   font-family: 'NimbusSanL-Reg';
+=======
+  font-family: "NimbusSanL-Reg";
+>>>>>>> dev
   text-align: center;
   margin-bottom: 0em;
 }
@@ -203,6 +351,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
+<<<<<<< HEAD
       -ms-flex: 1;
           flex: 1;
   -webkit-box-orient: vertical;
@@ -219,6 +368,24 @@ a {
   background-color: #fdfffd;
   -webkit-box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
           box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+=======
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1em 5em 8em 5em;
+  padding: 2em 10em 6em 10em;
+  font-family: "KaushanScript-Regular";
+  background-color: #fdfffd;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+  box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+>>>>>>> dev
 }
 
 .menu_palette_du_gout--entree h3:before {
@@ -231,7 +398,11 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#3d923a), to(#beff7f));
   background: linear-gradient(90deg, #3d923a, #beff7f);
   -webkit-animation: animation_left 6s linear infinite;
+<<<<<<< HEAD
           animation: animation_left 6s linear infinite;
+=======
+  animation: animation_left 6s linear infinite;
+>>>>>>> dev
 }
 
 .menu_palette_du_gout--entree h3:after {
@@ -244,7 +415,11 @@ a {
   background: -webkit-gradient(linear, right top, left top, from(#3d923a), to(#beff7f));
   background: linear-gradient(-90deg, #3d923a, #beff7f);
   -webkit-animation: animation_right 6s linear infinite;
+<<<<<<< HEAD
           animation: animation_right 6s linear infinite;
+=======
+  animation: animation_right 6s linear infinite;
+>>>>>>> dev
 }
 
 .menu_palette_du_gout--principal h3:before {
@@ -257,7 +432,11 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#3d923a), to(#beff7f));
   background: linear-gradient(90deg, #3d923a, #beff7f);
   -webkit-animation: animation_left 6s linear infinite;
+<<<<<<< HEAD
           animation: animation_left 6s linear infinite;
+=======
+  animation: animation_left 6s linear infinite;
+>>>>>>> dev
 }
 
 .menu_palette_du_gout--principal h3:after {
@@ -270,7 +449,11 @@ a {
   background: -webkit-gradient(linear, right top, left top, from(#3d923a), to(#beff7f));
   background: linear-gradient(-90deg, #3d923a, #beff7f);
   -webkit-animation: animation_right 6s linear infinite;
+<<<<<<< HEAD
           animation: animation_right 6s linear infinite;
+=======
+  animation: animation_right 6s linear infinite;
+>>>>>>> dev
 }
 
 .menu_palette_du_gout--dessert h3:before {
@@ -283,7 +466,11 @@ a {
   background: -webkit-gradient(linear, left top, right top, from(#3d923a), to(#beff7f));
   background: linear-gradient(90deg, #3d923a, #beff7f);
   -webkit-animation: animation_left 6s linear infinite;
+<<<<<<< HEAD
           animation: animation_left 6s linear infinite;
+=======
+  animation: animation_left 6s linear infinite;
+>>>>>>> dev
 }
 
 .menu_palette_du_gout--dessert h3:after {
@@ -296,7 +483,11 @@ a {
   background: -webkit-gradient(linear, right top, left top, from(#3d923a), to(#beff7f));
   background: linear-gradient(-90deg, #3d923a, #beff7f);
   -webkit-animation: animation_right 6s linear infinite;
+<<<<<<< HEAD
           animation: animation_right 6s linear infinite;
+=======
+  animation: animation_right 6s linear infinite;
+>>>>>>> dev
 }
 
 .menu_palette_du_gout_titre {
@@ -317,8 +508,13 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+>>>>>>> dev
   text-align: start;
 }
 
@@ -341,8 +537,13 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+<<<<<<< HEAD
       -ms-flex-pack: justify;
           justify-content: space-between;
+=======
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+>>>>>>> dev
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -359,12 +560,17 @@ footer a {
 
 .mentions :hover, .contactez :hover {
   -webkit-animation: wiggle 0.5s infinite;
+<<<<<<< HEAD
           animation: wiggle 0.5s infinite;
+=======
+  animation: wiggle 0.5s infinite;
+>>>>>>> dev
 }
 
 @-webkit-keyframes wiggle {
   0% {
     -webkit-transform: translate(1px, 1px) rotate(0deg);
+<<<<<<< HEAD
             transform: translate(1px, 1px) rotate(0deg);
   }
   10% {
@@ -459,3 +665,99 @@ footer a {
 /*-------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 /*# sourceMappingURL=Style_menu_palette_du_gout.css.map */
+=======
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+/*-------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*# sourceMappingURL=Style_menu_palette_du_gout.css.map */
+
+/*# sourceMappingURL=style_menu_palette_du_gout.css.map */
+>>>>>>> dev
