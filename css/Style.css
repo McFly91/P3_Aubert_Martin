@@ -63,9 +63,6 @@ a {
   text-decoration: none;
 }
 
-/*section {
-    padding-bottom: 2em;
-}*/
 span {
   display: block;
 }
@@ -224,7 +221,7 @@ span {
 aside {
   width: 15em;
   height: 2.5em;
-  border-radius: 10px;
+  border-radius: 0.7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,4 +414,4 @@ footer a {
 /*----------------------------------------------------------------*/
 /*# sourceMappingURL=Style.css.map */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=Style.css.map */

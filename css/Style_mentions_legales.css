@@ -28,7 +28,7 @@
   font-family: "KaushanScript-Regular";
   src: url("Polices/KaushanScript-Regular.otf");
 }
-/*------------------------------------------------*/
+/*-----------------------------------------------*/
 header, footer {
   background-color: #579c87;
 }
@@ -63,141 +63,11 @@ a {
   text-decoration: none;
 }
 
-/* Configuration du Délice des papilles                                                                */
-.menu_delice_des_papilles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  margin: 1em 5em 8em 5em;
-  padding: 2em 10em 6em 10em;
-  font-family: "AlexBrush-Regular";
-  font-weight: bold;
-  background-color: #f9f9f9;
-  -webkit-box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
-  box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
-}
-
-.menu_delice_des_papilles p {
-  font-size: 1.3em;
-}
-
-.menu_delice_des_papilles--entree h3:before {
-  content: "";
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  top: 50%;
-  right: 100%;
-  background: #0022db;
-  border-radius: 0% 50% 0 50%/0 50% 0% 50%;
-}
-
-.menu_delice_des_papilles--entree h3:after {
-  content: "";
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  top: 50%;
-  left: 100%;
-  background: #0022db;
-  border-radius: 50% 0% 50% 0%/50% 0% 50% 0%;
-}
-
-.menu_delice_des_papilles--principal h3:before {
-  content: "";
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  top: 50%;
-  right: 100%;
-  background: #0670f3;
-  border-radius: 0% 50% 0 50%/0 50% 0% 50%;
-}
-
-.menu_delice_des_papilles--principal h3:after {
-  content: "";
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  top: 50%;
-  left: 100%;
-  background: #0670f3;
-  border-radius: 50% 0% 50% 0%/50% 0% 50% 0%;
-}
-
-.menu_delice_des_papilles--dessert h3:before {
-  content: "";
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  top: 50%;
-  right: 100%;
-  background: #56b3f7;
-  border-radius: 0% 50% 0 50%/0 50% 0% 50%;
-}
-
-.menu_delice_des_papilles--dessert h3:after {
-  content: "";
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  top: 50%;
-  left: 100%;
-  background: #56b3f7;
-  border-radius: 50% 0% 50% 0%/50% 0% 50% 0%;
-}
-
-.menu_delice_des_papilles_titre {
-  font-size: 2em;
-  font-weight: bold;
-  background: -webkit-gradient(linear, left top, right top, from(#0022db), to(#56b3f7));
-  background: linear-gradient(to right, #0022db, #56b3f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.menu_delice_des_papilles_titre_composition {
+p {
+  font-family: "NimbusSanL-Reg";
   text-align: center;
 }
 
-.menu_delice_des_papilles_composition {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: start;
-}
-
-.menu_delice_des_papilles_composition_prix {
-  text-align: right;
-}
-
-.menu_delice_des_papilles_composition div {
-  padding-right: 0.5em;
-}
-
-h3 {
-  font-size: 1.4em;
-  display: inline-block;
-  position: relative;
-  width: 33%;
-  margin-top: 2em;
-}
-
-/*-----------------------------------------------------------------------------------------------*/
 /* Configuration du footer                                        */
 footer {
   display: -webkit-box;
@@ -319,6 +189,6 @@ footer a {
 }
 /*-------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
-/*# sourceMappingURL=Style_menu_delice_des_papilles.css.map */
+/*# sourceMappingURL=Style_mentions_legales.css.map */
 
-/*# sourceMappingURL=Style_menu_delice_des_papilles.css.map */
+/*# sourceMappingURL=style_mentions_legales.css.map */
