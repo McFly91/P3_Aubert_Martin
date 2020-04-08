@@ -1,0 +1,95 @@
+﻿/* Polices d'écritures pour les différents textes */
+    @import "./base/polices";
+/*-----------------------------------------------*/
+
+// Variables et mixins                                 
+    // Variables du header et footer                  
+        @import "./utils/variables_header_footer";
+    ///////////////////////////////////////////////////
+    // Variables des menus
+        @import "./utils/variables_menu_note_enchantee";
+    ///////////////////////////////////////////////////
+    @import "./utils/mixins_common";
+
+    @import "./utils/mixins_menu_note_enchantee";
+////////////////////////////////////////////////////////
+
+@import "./layouts/body";
+
+/*Configuration du menu la note enchantée                                                                       */
+    .menu_note_enchantee {
+        box-shadow: 0px 0px 10px 3px $box-shadow-color;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: $menu-margin;
+        padding: $menu-padding;
+        font-family: 'SCRIPTBL';
+        background-color: $menu-color;
+
+        img {
+            animation: note 3s ease-in-out infinite;
+        }
+
+        @include box-shadow;
+
+        @import "./components/transition_menu_note_enchantee";
+
+        h3:before {
+            @include deco-menu-right($deco-principal-color)
+        }
+        h3:after {
+            @include deco-menu-left($deco-principal-color)
+        }
+
+        &_titre {
+            font-size: 2em;
+
+            &_composition {
+                text-align: center;
+            }
+        }
+
+        &_composition {
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+
+            &_prix {
+                text-align: right;
+            }
+
+            div {
+                padding-right: 0.5em;
+            }
+        }
+
+        &_fin_menu {
+            display: flex;
+            justify-content: center;
+            font-size: 1.6em;
+            margin: 1em 0 1em 0;
+
+            img {
+                max-width: 6%;
+                padding-right: 0.5em;
+            }
+        }
+    }
+
+    // Animation de la note de musique sur le menu la Note enchantée
+    @import "./components/_animation_menu_note_enchantee";
+
+    h3 {
+        font-size: 1.4em;
+        display: inline-block;
+        position: relative;
+        width: 33%;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+
+/* Configuration du footer                                        */
+    @import "./layouts/footer";
+/*----------------------------------------------------------------*/

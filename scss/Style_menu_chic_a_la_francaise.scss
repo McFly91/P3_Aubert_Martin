@@ -1,0 +1,110 @@
+﻿/* Polices d'écritures pour les différents textes */
+    @import "./base/polices";
+/*------------------------------------------------*/
+
+// Variables et mixins                                 
+    // Variables du header et footer                  
+        @import "./utils/variables_header_footer";
+    ///////////////////////////////////////////////////
+    // Variables des menus
+        @import "./utils/variables_menu_chic_a_la_francaise";
+    ///////////////////////////////////////////////////
+    @import "./utils/mixins_common";
+
+    @import "./utils/mixins_menu_chic_a_la_francaise";
+////////////////////////////////////////////////////////
+
+@import "./layouts/body";
+
+/* Configuration du menu chic à la française                                                                         */
+    .menu_chic_a_la_francaise {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: $menu-margin;
+        padding: $menu-padding;
+        font-family: 'Quicksand-Regular';
+        background-color: $menu-color;
+
+        @include box-shadow;
+
+        &--entree {
+            color: $deco-entree-color; 
+
+            @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_entree";
+
+            h3:before {
+                @include deco-menu-right($deco-entree-color)
+            } 
+            h3:after {
+                @include deco-menu-left($deco-entree-color)
+            }
+        }
+        
+        &--principal {
+            color: $deco-principal-color;
+
+            @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_principal";
+
+            h3:before {
+                @include deco-menu-right($deco-principal-color)
+            }
+            h3:after {
+                @include deco-menu-left($deco-principal-color)
+            }
+        }
+        
+        &--dessert {
+            color: $deco-dessert-color;
+
+            @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_dessert";
+
+            h3:before {
+                @include deco-menu-right($deco-dessert-color)
+            }
+            h3:after {
+                @include deco-menu-left($deco-dessert-color)
+            }
+        }
+        
+        &_titre {
+            font-size: 2em;
+            font-weight: bold;
+            background: $menu-color-chic_a_la_francaise-degrade;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            &_composition {
+                text-align: center;
+            }
+        }
+        
+        &_composition {
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+
+            &_prix {
+                text-align: right;
+            }
+
+            div {
+                padding-right: 0.5em;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 1.4em;
+        display: inline-block;
+        position: relative;
+        width: 33%;
+        margin-top: 2em;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+
+/* Configuration du footer                                        */
+    @import "./layouts/footer";
+/*----------------------------------------------------------------*/

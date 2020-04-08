@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/* Polices d'écritures pour les différents textes */
+@font-face {
+  font-family: "NimbusSanL-Reg";
+  src: url("Polices/NimbusSanL-Reg.otf");
+}
+@font-face {
+  font-family: "segoeprb";
+  src: url("Polices/segoeprb.ttf");
+}
+@font-face {
+  font-family: "SCRIPTBL";
+  src: url("Polices/SCRIPTBL.TTF");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("Polices/Quicksand-Regular.otf");
+}
+@font-face {
+  font-family: "SegoePrint";
+  src: url("Polices/segoeprb.ttf");
+}
+@font-face {
+  font-family: "AlexBrush-Regular";
+  src: url("Polices/AlexBrush-Regular.ttf");
+}
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("Polices/KaushanScript-Regular.otf");
+}
+/*-----------------------------------------------*/
+header, footer {
+  background-color: #579c87;
+}
+
+header a, footer a {
+  font-family: "NimbusSanL-Reg";
+  color: #fdcb46;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+}
+
+h2 {
+  font-family: "NimbusSanL-Reg";
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Configuration des menus                                                                             */
+.menu_note_enchantee, .menu_chic_a_la_francaise, .menu_delice_des_papilles, .menu_palette_du_gout {
+  width: 12em;
+  height: 20em;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+  box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+
+.menu_note_enchantee a, .menu_chic_a_la_francaise a, .menu_delice_des_papilles a, .menu_palette_du_gout a {
+  font-size: 1.5em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.menu_note_enchantee a:hover, .menu_chic_a_la_francaise a:hover, .menu_delice_des_papilles a:hover, .menu_palette_du_gout a:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.menu_note_enchantee span, .menu_chic_a_la_francaise span, .menu_delice_des_papilles span, .menu_palette_du_gout span {
+  display: block;
+}
+
+/* Configuration de l'affichage des menus La Note Enchantée et Le Chic à la Française */
+#menu_note_enchantee_et_chic_a_la_francaise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu_note_enchantee {
+  font-family: "SCRIPTBL";
+  background-color: #fcdfdb;
+}
+
+.menu_note_enchantee img {
+  max-width: 20%;
+  -webkit-animation: note 3s ease-in-out infinite;
+  animation: note 3s ease-in-out infinite;
+}
+
+.menu_note_enchantee a {
+  font-family: "segoeprb";
+  color: #3c1218;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes note {
+  0% {
+    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
+    transform: skew(0deg) perspective(0px) translateZ(0px);
+  }
+  50% {
+    -webkit-transform: skew(5deg) perspective(60px) translateZ(4px);
+    transform: skew(5deg) perspective(60px) translateZ(4px);
+  }
+  100% {
+    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
+    transform: skew(0deg) perspective(0px) translateZ(0px);
+  }
+}
+@keyframes note {
+  0% {
+    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
+    transform: skew(0deg) perspective(0px) translateZ(0px);
+  }
+  50% {
+    -webkit-transform: skew(5deg) perspective(60px) translateZ(4px);
+    transform: skew(5deg) perspective(60px) translateZ(4px);
+  }
+  100% {
+    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
+    transform: skew(0deg) perspective(0px) translateZ(0px);
+  }
+}
+.menu_chic_a_la_francaise {
+  font-family: "Quicksand-Regular";
+  background-color: #fff5fe;
+}
+
+.menu_chic_a_la_francaise span {
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, right top, from(#c67412), to(#6e4ccc));
+  background: linear-gradient(to right top, #c67412, #6e4ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_chic_a_la_francaise a {
+  font-family: Georgia;
+  font-weight: bold;
+  color: #c77412;
+}
+
+/*----------------------------------------------------------------------------------------*/
+/* Configuration de l'affichage des menus delice des papilles et palette du gout */
+#menu_delice_des_papilles_et_palette_du_gout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.menu_delice_des_papilles {
+  font-family: "AlexBrush-Regular";
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.menu_delice_des_papilles span {
+  font-size: 1.3em;
+  background: -webkit-gradient(linear, left top, right top, from(#0022db), to(#56b3f7));
+  background: linear-gradient(to right, #0022db, #56b3f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_delice_des_papilles a {
+  font-family: "SegoePrint";
+  color: #0887fb;
+}
+
+.menu_palette_du_gout {
+  font-family: "KaushanScript-Regular";
+  background-color: #fdfffd;
+}
+
+.menu_palette_du_gout span {
+  background: -webkit-gradient(linear, left top, right top, from(#3d923a), to(#beff7f));
+  background: linear-gradient(90deg, #3d923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_palette_du_gout a {
+  font-family: "SegoePrint";
+  color: #72bf56;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/* Configuration de l'affichage du bloc aside       */
+aside {
+  width: 15em;
+  height: 2.5em;
+  border-radius: 0.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 6em;
+  background-color: #579c87;
+  font-family: "NimbusSanL-Reg";
+  color: #fdcb46;
+}
+
+aside p {
+  margin: auto;
+  font-size: 1.5em;
+}
+
+aside p span {
+  display: inline;
+  -webkit-animation: animation_aside 1.5s infinite both;
+  animation: animation_aside 1.5s infinite both;
+}
+
+aside p span:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+aside p span:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+@-webkit-keyframes animation_aside {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes animation_aside {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+/*---------------------------------------------------*/
+/* Configuration de l'alignement du bloc section et du bloc aside */
+#section_aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/*----------------------------------------------------------------*/
+/* Configuration du footer                                        */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  font-size: 1.5em;
+}
+
+/* Animations sur le footer                                   */
+.mentions, .contactez {
+  padding: 0.5em 2em 0.5em 2em;
+}
+
+.mentions :hover, .contactez :hover {
+  -webkit-animation: wiggle 0.5s infinite;
+  animation: wiggle 0.5s infinite;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+/*-------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*# sourceMappingURL=Style.css.map */
+
+/*# sourceMappingURL=Style.css.map */

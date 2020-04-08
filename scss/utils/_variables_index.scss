@@ -1,0 +1,27 @@
+// Couleurs
+    $box-shadow-color: rgba(237, 237, 237, 0.75);
+    // Couleurs menu note enchantée
+        $menu-color-note_enchantee: #fcdfdb;
+        $menu-color-note_enchantee-lien: #3c1218;
+    // Couleurs menu chic à la française
+        $menu-color-chic_a_la_francaise: #fff5fe;
+        $menu-color-chic_a_la_francaise-degrade: linear-gradient(to right top, #c67412, #6e4ccc);
+        $menu-color-chic_a_la_francaise-lien: #c77412;
+    // Couleurs menu délice des papilles
+        $menu-color-delice_des_papilles:#f9f9f9;
+        $menu-color-delice_des_papilles-degrade: linear-gradient(to right, #0022db, #56b3f7);
+        $menu-color-delice_des_papilles-lien: #0887fb;
+    // Couleurs menu palette du gout
+        $menu-coloc-palette_du_gout: #fdfffd;
+        $menu-coloc-palette_du_gout-degrade:linear-gradient(90deg, #3d923a, #beff7f);
+        $menu-coloc-palette_du_gout-lien: #72bf56;
+    
+// Dimensions des menus et margin
+    // Menus    
+        $menus-width: 12em;
+        $menus-height: 20em;
+        $menus-margin : 1em;
+     // Aside
+        $aside-width: 15em;
+        $aside-height: 2.5em;
+        $aside-margin: 6em;

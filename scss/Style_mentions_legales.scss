@@ -1,0 +1,25 @@
+/* Polices d'écritures pour les différents textes */
+    @import "./base/polices";
+/*-----------------------------------------------*/
+
+// Variables et mixins                                 
+    // Variables du header et footer                  
+    @import "./utils/variables_header_footer";
+    ////////////////////////////////////////////////////
+    // Variables de l'index
+    @import "./utils/_variables_index";
+    
+    ///////////////////////////////////////////////////
+    @import "./utils/mixins_common";
+////////////////////////////////////////////////////////
+
+@import "./layouts/body";
+
+p {
+    font-family: 'NimbusSanL-Reg';
+    text-align: center;
+}
+
+/* Configuration du footer                                        */
+@import "./layouts/footer";
+/*----------------------------------------------------------------*/

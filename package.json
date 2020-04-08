@@ -1,0 +1,20 @@
+{
+  "name": "scss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass_update": "sass --update ./scss/:./css/",
+    "sass_watch": "sass --watch ./scss/:./css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McFly91/P3_Aubert_Martin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/McFly91/P3_Aubert_Martin/issues"
+  },
+  "homepage": "https://github.com/McFly91/P3_Aubert_Martin#readme",
+  "description": ""
+}

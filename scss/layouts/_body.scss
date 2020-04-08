@@ -1,0 +1,28 @@
+header, footer {
+    background-color: $background-color-header-footer;
+    a {
+    font-family: 'NimbusSanL-Reg';
+    color: $text-color-header-footer;
+    }
+}
+
+body {
+    margin: 0;
+    font-size: 1.4em;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'NimbusSanL-Reg';
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+a {
+    text-decoration: none;
+}

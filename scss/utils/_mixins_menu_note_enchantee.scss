@@ -1,0 +1,21 @@
+@mixin deco-menu-right($color) {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    top: 50%;
+    right: 100%;
+    background: $color;
+    border-radius: 70% 50% 90% 10%/90% 70% 70% 10%;
+}
+
+@mixin deco-menu-left($color) {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    top: 50%;
+    left: 100%;
+    background: $color;
+    border-radius: 90% 0% 80% 20%/50% 25% 90% 30%;
+}

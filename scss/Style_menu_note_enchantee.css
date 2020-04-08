@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/* Polices d'écritures pour les différents textes */
+@font-face {
+  font-family: 'NimbusSanL-Reg';
+  src: url("Polices/NimbusSanL-Reg.otf");
+}
+
+@font-face {
+  font-family: 'segoeprb';
+  src: url("Polices/segoeprb.ttf");
+}
+
+@font-face {
+  font-family: 'SCRIPTBL';
+  src: url("Polices/SCRIPTBL.TTF");
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url("Polices/Quicksand-Regular.otf");
+}
+
+@font-face {
+  font-family: 'SegoePrint';
+  src: url("Polices/segoeprb.ttf");
+}
+
+@font-face {
+  font-family: 'AlexBrush-Regular';
+  src: url("Polices/AlexBrush-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'KaushanScript-Regular';
+  src: url("Polices/KaushanScript-Regular.otf");
+}
+
+/*-----------------------------------------------*/
+header, footer {
+  background-color: #579c87;
+}
+
+header a, footer a {
+  font-family: 'NimbusSanL-Reg';
+  color: #fdcb46;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'NimbusSanL-Reg';
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Configuration du menu la note enchantée                                                                       */
+.menu_note_enchantee {
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+          box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 1em 5em 8em 5em;
+  padding: 2em 10em 2em 10em;
+  font-family: 'SCRIPTBL';
+  background-color: #fcdfdb;
+  box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+}
+
+.menu_note_enchantee img {
+  -webkit-animation: note 3s ease-in-out infinite;
+          animation: note 3s ease-in-out infinite;
+}
+
+.menu_note_enchantee h3:before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  top: 50%;
+  right: 100%;
+  background: black;
+  border-radius: 70% 50% 90% 10%/90% 70% 70% 10%;
+}
+
+.menu_note_enchantee h3:after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  top: 50%;
+  left: 100%;
+  background: black;
+  border-radius: 90% 0% 80% 20%/50% 25% 90% 30%;
+}
+
+.menu_note_enchantee_titre {
+  font-size: 2em;
+}
+
+.menu_note_enchantee_titre_composition {
+  text-align: center;
+}
+
+.menu_note_enchantee_composition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: start;
+}
+
+.menu_note_enchantee_composition_prix {
+  text-align: right;
+}
+
+.menu_note_enchantee_composition div {
+  padding-right: 0.5em;
+}
+
+.menu_note_enchantee_fin_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.6em;
+  margin: 1em 0 1em 0;
+}
+
+.menu_note_enchantee_fin_menu img {
+  max-width: 6%;
+  padding-right: 0.5em;
+}
+
+@-webkit-keyframes note {
+  0% {
+    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
+            transform: skew(0deg) perspective(0px) translateZ(0px);
+  }
+  50% {
+    -webkit-transform: skew(5deg) perspective(60px) translateZ(4px);
+            transform: skew(5deg) perspective(60px) translateZ(4px);
+  }
+  100% {
+    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
+            transform: skew(0deg) perspective(0px) translateZ(0px);
+  }
+}
+
+@keyframes note {
+  0% {
+    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
+            transform: skew(0deg) perspective(0px) translateZ(0px);
+  }
+  50% {
+    -webkit-transform: skew(5deg) perspective(60px) translateZ(4px);
+            transform: skew(5deg) perspective(60px) translateZ(4px);
+  }
+  100% {
+    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
+            transform: skew(0deg) perspective(0px) translateZ(0px);
+  }
+}
+
+h3 {
+  font-size: 1.4em;
+  display: inline-block;
+  position: relative;
+  width: 33%;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Configuration du footer                                        */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  font-size: 1.5em;
+}
+
+/* Animations sur le footer                                   */
+.mentions, .contactez {
+  padding: 0.5em 2em 0.5em 2em;
+}
+
+.mentions :hover, .contactez :hover {
+  -webkit-animation: wiggle 0.5s infinite;
+          animation: wiggle 0.5s infinite;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/*-------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*# sourceMappingURL=Style_menu_note_enchantee.css.map */

@@ -1,0 +1,94 @@
+﻿/* Polices d'écritures pour les différents textes */
+    @import "./base/polices";
+/*-----------------------------------------------*/
+
+// Variables et mixins                                 
+    // Variables du header et footer                  
+        @import "./utils/variables_header_footer";
+    ////////////////////////////////////////////////////
+    // Variables des menus
+        @import "./utils/variables_menu_palette_du_gout";
+    ////////////////////////////////////////////////////
+    @import "./utils/mixins_common";
+
+    @import "./utils/mixins_menu_palette_du_gout";
+////////////////////////////////////////////////////////
+
+@import "./layouts/body";
+
+/*Configuration du menu 2                                                                          */
+    .menu_palette_du_gout {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: $menu-margin;
+        padding: $menu-padding;
+        font-family: 'KaushanScript-Regular';
+        background-color: $menu-color;
+
+        @include box-shadow;
+
+        &--entree {
+            h3:before {
+                @include deco-menu-left
+            } 
+            h3:after {
+                @include deco-menu-right
+            }
+        }
+        
+        &--principal {
+            h3:before {
+                @include deco-menu-left
+            }
+            h3:after {
+                @include deco-menu-right
+            }
+        }
+        
+        &--dessert {
+            h3:before {
+                @include deco-menu-left
+            }
+            h3:after {
+                @include deco-menu-right
+            }
+        }
+        
+        &_titre {
+            font-size: 2em;
+            font-weight: bold;
+            background: linear-gradient(90deg, $deco-principal-color, $deco-principal-color-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            &_composition {
+                text-align: center;
+            }
+        }
+        
+        &_composition {
+            display: flex;
+            justify-content: space-between;
+            text-align: start;
+
+            div {
+                padding-right: 0.5em;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 1.4em;
+        display: inline-block;
+        position: relative;
+        width: 33%;
+        margin-top: 2em;
+    }
+/*-----------------------------------------------------------------------------------------------*/
+
+/* Configuration du footer                                        */
+  @import "./layouts/footer";
+/*----------------------------------------------------------------*/

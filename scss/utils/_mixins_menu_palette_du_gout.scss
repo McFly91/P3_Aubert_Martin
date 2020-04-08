@@ -1,0 +1,23 @@
+@mixin deco-menu-left {
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    top: 50%;
+    right: 100%;
+    background: linear-gradient(90deg, $deco-principal-color, $deco-principal-color-2);
+    animation: animation_left 6s linear infinite;
+}
+
+@mixin deco-menu-right {
+    content: "";
+    position: absolute;
+    height: 7px;
+    width: 100%;
+    top: 50%;
+    left: 100%;
+    background: linear-gradient(-90deg, $deco-principal-color, $deco-principal-color-2);
+    animation: animation_right 6s linear infinite;
+}
+
+@import "../components/animation_menu_palette_du_gout";
