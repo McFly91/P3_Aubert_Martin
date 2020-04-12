@@ -4,10 +4,10 @@
 
 // Variables et mixins                                 
     // Variables du header et footer                  
-    @import "./utils/variables_header_footer";
+        @import "./utils/variables_header_footer";
     ////////////////////////////////////////////////////
     // Variables de l'index
-    @import "./utils/_variables_index";
+        @import "./utils/_variables_index";
     
     ///////////////////////////////////////////////////
     @import "./utils/mixins_common";
@@ -29,17 +29,13 @@
         a {
             font-size: 1.5em;
             display: inline-flex;
-            transform: scale(1);
-            transition: transform 1s;
-            
-            &:hover {
-                transform: scale(1.4);
-            }
         }
 
         span {
             display: block;
         }
+
+        @import "./components/transition_index";
     }
 
     /* Configuration de l'affichage des menus La Note Enchantée et Le Chic à la Française */
@@ -116,14 +112,14 @@
             background-color: $menu-coloc-palette_du_gout;
 
             span {
-                background: $menu-coloc-palette_du_gout-degrade;
+                background: $menu-color-palette_du_gout-degrade;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
 
             a {
                 font-family: 'SegoePrint';
-                color: $menu-coloc-palette_du_gout-lien;
+                color: $menu-color-palette_du_gout-lien;
             }
         }
     /*--------------------------------------------------------------------------------*/
@@ -146,21 +142,8 @@
             margin: auto;
             font-size: 1.5em;
         
-            span {
-                display: inline;
-                animation: animation_aside 1.5s infinite both;
-            }
-
-            span:nth-child(2) {
-                animation-delay: 0.3s;
-            }
-
-            span:nth-child(3) {
-                animation-delay: 0.6s;
-            }
+            @import "./components/animation_aside";
         }
-
-        @import "./components/animation_aside";
     }
 
 

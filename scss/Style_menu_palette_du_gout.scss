@@ -31,6 +31,8 @@
         @include box-shadow;
 
         &--entree {
+            @import "./components/transition_menu_palette_du_gout";
+
             h3:before {
                 @include deco-menu-left
             } 
@@ -40,6 +42,8 @@
         }
         
         &--principal {
+            @import "./components/transition_menu_palette_du_gout";
+
             h3:before {
                 @include deco-menu-left
             }
@@ -49,6 +53,8 @@
         }
         
         &--dessert {
+            @import "./components/transition_menu_palette_du_gout";
+
             h3:before {
                 @include deco-menu-left
             }

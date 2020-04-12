@@ -1,5 +1,8 @@
+// Variables communes à toutes les pages
+    @import "variables_common";
+
 // Couleurs
-    $box-shadow-color: rgba(237, 237, 237, 0.75);
+    
     // Couleurs menu note enchantée
         $menu-color-note_enchantee: #fcdfdb;
         $menu-color-note_enchantee-lien: #3c1218;
@@ -13,8 +16,8 @@
         $menu-color-delice_des_papilles-lien: #0887fb;
     // Couleurs menu palette du gout
         $menu-coloc-palette_du_gout: #fdfffd;
-        $menu-coloc-palette_du_gout-degrade:linear-gradient(90deg, #3d923a, #beff7f);
-        $menu-coloc-palette_du_gout-lien: #72bf56;
+        $menu-color-palette_du_gout-degrade:linear-gradient(90deg, #3d923a, #beff7f);
+        $menu-color-palette_du_gout-lien: #72bf56;
     
 // Dimensions des menus et margin
     // Menus    

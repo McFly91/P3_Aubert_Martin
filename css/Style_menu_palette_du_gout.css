@@ -119,6 +119,14 @@ a {
   background-color: #fdfffd;
   box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
 }
+.menu_palette_du_gout--entree span {
+  background: linear-gradient(to top, #3d923a 0%, #beff7f 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s;
+}
+.menu_palette_du_gout--entree span:hover {
+  background-size: 100% 100%;
+}
 .menu_palette_du_gout--entree h3:before {
   content: "";
   position: absolute;
@@ -139,6 +147,14 @@ a {
   background: linear-gradient(-90deg, #3d923a, #beff7f);
   animation: animation_right 6s linear infinite;
 }
+.menu_palette_du_gout--principal span {
+  background: linear-gradient(to top, #3d923a 0%, #beff7f 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s;
+}
+.menu_palette_du_gout--principal span:hover {
+  background-size: 100% 100%;
+}
 .menu_palette_du_gout--principal h3:before {
   content: "";
   position: absolute;
@@ -158,6 +174,14 @@ a {
   left: 100%;
   background: linear-gradient(-90deg, #3d923a, #beff7f);
   animation: animation_right 6s linear infinite;
+}
+.menu_palette_du_gout--dessert span {
+  background: linear-gradient(to top, #3d923a 0%, #beff7f 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s;
+}
+.menu_palette_du_gout--dessert span:hover {
+  background-size: 100% 100%;
 }
 .menu_palette_du_gout--dessert h3:before {
   content: "";

@@ -1,3 +1,16 @@
+span {
+  display: inline;
+  animation: animation_aside 1.5s infinite both;
+}
+
+span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
 @keyframes animation_aside {
     0% {
       opacity: .2;
