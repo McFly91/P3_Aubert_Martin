@@ -9,7 +9,7 @@
     // Variables des menus
         @import "./utils/variables_menu_chic_a_la_francaise";
     ///////////////////////////////////////////////////
-    @import "./utils/mixins_common";
+    @import "./utils/mixins_media_queries";
 
     @import "./utils/mixins_menu_chic_a_la_francaise";
 ////////////////////////////////////////////////////////
@@ -29,8 +29,15 @@
         font-family: map-get($font-family, menu_chic_a_la_francaise), $font-family-secondary;
         background-color: $menu-color;
 
-        &--entree {
+        @include petit-ecran {
+            margin: 0;
+            margin-bottom: $menu-margin-bottom_petit_ecran;
+            padding: $menu-padding_petit_ecran;
+        }
+
+        &__entree {
             color: $deco-entree-color; 
+            flex-direction: column;
 
             @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_entree";
 
@@ -40,10 +47,21 @@
             h3:after {
                 @include deco-menu-left($deco-entree-color)
             }
+
+            &--prix {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
+            }
         }
         
-        &--principal {
+        &__principal {
             color: $deco-principal-color;
+            flex-direction: column;
 
             @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_principal";
 
@@ -53,10 +71,21 @@
             h3:after {
                 @include deco-menu-left($deco-principal-color)
             }
+
+            &--prix {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
+            }
         }
         
-        &--dessert {
+        &__dessert {
             color: $deco-dessert-color;
+            flex-direction: column;
 
             @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_dessert";
 
@@ -65,6 +94,16 @@
             }
             h3:after {
                 @include deco-menu-left($deco-dessert-color)
+            }
+
+            &--prix {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
             }
         }
         
@@ -101,6 +140,11 @@
         position: relative;
         width: 33%;
         margin-top: 2em;
+        overflow-wrap: break-word;
+
+        @include petit-ecran {
+            margin-top: $h3-margin-top_petit_ecran;
+        }
     }
 /*-----------------------------------------------------------------------------------------------*/
 

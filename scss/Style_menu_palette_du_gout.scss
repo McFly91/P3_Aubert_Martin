@@ -35,7 +35,7 @@
             padding: $menu-padding_petit_ecran;
         }
 
-        &_entree {
+        &__entree {
             flex-direction: column;
 
             @import "./components/transition_menu_palette_du_gout";
@@ -47,7 +47,7 @@
                 @include deco-menu-right
             }
 
-            &--1, &--2, &--3 {
+            &--prix {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -58,7 +58,7 @@
             }
         }
         
-        &_principal {
+        &__principal {
             flex-direction: column;
 
             @import "./components/transition_menu_palette_du_gout";
@@ -70,7 +70,7 @@
                 @include deco-menu-right
             }
 
-            &--1, &--2, &--3 {
+            &--prix {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -81,7 +81,7 @@
             }
         }
         
-        &_dessert {
+        &__dessert {
             flex-direction: column;
 
             @import "./components/transition_menu_palette_du_gout";
@@ -93,7 +93,7 @@
                 @include deco-menu-right
             }
 
-            &--1, &--2, &--3 {
+            &--prix {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;

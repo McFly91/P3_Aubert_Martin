@@ -131,18 +131,18 @@ a {
     padding: 0 0.3em 0 0.3em;
   }
 }
-.menu_palette_du_gout_entree {
+.menu_palette_du_gout__entree {
   flex-direction: column;
 }
-.menu_palette_du_gout_entree span {
+.menu_palette_du_gout__entree span {
   background: linear-gradient(to top, #3d923a 0%, #beff7f 8%, transparent 8.01%) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
-.menu_palette_du_gout_entree span:hover {
+.menu_palette_du_gout__entree span:hover {
   background-size: 100% 100%;
 }
-.menu_palette_du_gout_entree h3:before {
+.menu_palette_du_gout__entree h3:before {
   content: "";
   position: absolute;
   height: 7px;
@@ -152,7 +152,7 @@ a {
   background: linear-gradient(90deg, #3d923a, #beff7f);
   animation: animation_left 6s linear infinite;
 }
-.menu_palette_du_gout_entree h3:after {
+.menu_palette_du_gout__entree h3:after {
   content: "";
   position: absolute;
   height: 7px;
@@ -162,26 +162,26 @@ a {
   background: linear-gradient(-90deg, #3d923a, #beff7f);
   animation: animation_right 6s linear infinite;
 }
-.menu_palette_du_gout_entree--1, .menu_palette_du_gout_entree--2, .menu_palette_du_gout_entree--3 {
+.menu_palette_du_gout__entree--prix {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.menu_palette_du_gout_entree--1 p, .menu_palette_du_gout_entree--2 p, .menu_palette_du_gout_entree--3 p {
+.menu_palette_du_gout__entree--prix p {
   margin: 0;
 }
-.menu_palette_du_gout_principal {
+.menu_palette_du_gout__principal {
   flex-direction: column;
 }
-.menu_palette_du_gout_principal span {
+.menu_palette_du_gout__principal span {
   background: linear-gradient(to top, #3d923a 0%, #beff7f 8%, transparent 8.01%) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
-.menu_palette_du_gout_principal span:hover {
+.menu_palette_du_gout__principal span:hover {
   background-size: 100% 100%;
 }
-.menu_palette_du_gout_principal h3:before {
+.menu_palette_du_gout__principal h3:before {
   content: "";
   position: absolute;
   height: 7px;
@@ -191,7 +191,7 @@ a {
   background: linear-gradient(90deg, #3d923a, #beff7f);
   animation: animation_left 6s linear infinite;
 }
-.menu_palette_du_gout_principal h3:after {
+.menu_palette_du_gout__principal h3:after {
   content: "";
   position: absolute;
   height: 7px;
@@ -201,26 +201,26 @@ a {
   background: linear-gradient(-90deg, #3d923a, #beff7f);
   animation: animation_right 6s linear infinite;
 }
-.menu_palette_du_gout_principal--1, .menu_palette_du_gout_principal--2, .menu_palette_du_gout_principal--3 {
+.menu_palette_du_gout__principal--prix {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.menu_palette_du_gout_principal--1 p, .menu_palette_du_gout_principal--2 p, .menu_palette_du_gout_principal--3 p {
+.menu_palette_du_gout__principal--prix p {
   margin: 0;
 }
-.menu_palette_du_gout_dessert {
+.menu_palette_du_gout__dessert {
   flex-direction: column;
 }
-.menu_palette_du_gout_dessert span {
+.menu_palette_du_gout__dessert span {
   background: linear-gradient(to top, #3d923a 0%, #beff7f 8%, transparent 8.01%) no-repeat;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
-.menu_palette_du_gout_dessert span:hover {
+.menu_palette_du_gout__dessert span:hover {
   background-size: 100% 100%;
 }
-.menu_palette_du_gout_dessert h3:before {
+.menu_palette_du_gout__dessert h3:before {
   content: "";
   position: absolute;
   height: 7px;
@@ -230,7 +230,7 @@ a {
   background: linear-gradient(90deg, #3d923a, #beff7f);
   animation: animation_left 6s linear infinite;
 }
-.menu_palette_du_gout_dessert h3:after {
+.menu_palette_du_gout__dessert h3:after {
   content: "";
   position: absolute;
   height: 7px;
@@ -240,12 +240,12 @@ a {
   background: linear-gradient(-90deg, #3d923a, #beff7f);
   animation: animation_right 6s linear infinite;
 }
-.menu_palette_du_gout_dessert--1, .menu_palette_du_gout_dessert--2, .menu_palette_du_gout_dessert--3 {
+.menu_palette_du_gout__dessert--prix {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.menu_palette_du_gout_dessert--1 p, .menu_palette_du_gout_dessert--2 p, .menu_palette_du_gout_dessert--3 p {
+.menu_palette_du_gout__dessert--prix p {
   margin: 0;
 }
 .menu_palette_du_gout_titre {

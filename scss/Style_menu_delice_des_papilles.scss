@@ -9,7 +9,7 @@
     // Variables des menus
         @import "./utils/variables_menu_delice_des_papilles";
     ////////////////////////////////////////////////////
-    @import "./utils/mixins_common";
+    @import "./utils/mixins_media_queries";
 
     @import "./utils/mixins_menu_delice_des_papilles";
 ////////////////////////////////////////////////////////
@@ -34,7 +34,7 @@
             font-size: 1.3em;
         }
 
-        &--entree {
+        &__entree {
 
             @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_entree";
 
@@ -46,7 +46,7 @@
             }
         }
         
-        &--principal {
+        &__principal {
 
             @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_principal";
 
@@ -58,7 +58,7 @@
             }
         }
         
-        &--dessert {
+        &__dessert {
 
             @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_dessert";
 
