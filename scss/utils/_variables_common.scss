@@ -1,3 +1,32 @@
+// Polices de remplacement
+    $font-family-secondary: Arial, Helvetica, sans-serif;
+    $font-family: (
+        body: 'NimbusSanL-Reg',
+        menu_note_enchantee: 'SCRIPTBL',
+        menu_note_enchantee-lien:'segoeprb',
+        menu_chic_a_la_francaise: 'Quicksand-Regular',
+        menu_chic_a_la_francaise-lien: Georgia,
+        menu_delice_des_papilles: 'AlexBrush-Regular',
+        menu_palette_du_gout: 'KaushanScript-Regular',
+        menu-lien-specific: 'SegoePrint'
+        
+    );
+
+
 // Couleurs et dimensions du box-shadow
     $box-shadow-color: rgba(237, 237, 237, 0.75);
-    $box-shadow-dim: 0px 0px 10px 3px
+    $box-shadow-dim: 0px 0px 10px 3px;
+
+// Font size
+    $font-size: (
+        body: 1.4em, 
+        lien-menu: 1.5em, 
+        aside: 1.5em, 
+        lien-footer: 1.5em,
+        titre-menu: 2em,
+        titre-composition: 1.4em
+        );
+
+// Variables petit écran
+    @import "./variables_media_queries";
+

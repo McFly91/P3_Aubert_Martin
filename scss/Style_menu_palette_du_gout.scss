@@ -18,6 +18,7 @@
 
 /*Configuration du menu 2                                                                          */
     .menu_palette_du_gout {
+        box-shadow: $box-shadow-dim $box-shadow-color;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -25,10 +26,8 @@
         text-align: center;
         margin: $menu-margin;
         padding: $menu-padding;
-        font-family: 'KaushanScript-Regular';
+        font-family: map-get($font-family, menu_palette_du_gout), $font-family-secondary;
         background-color: $menu-color;
-
-        @include box-shadow;
 
         &--entree {
             @import "./components/transition_menu_palette_du_gout";
@@ -64,7 +63,7 @@
         }
         
         &_titre {
-            font-size: 2em;
+            font-size: map-get($font-size, titre-menu);
             font-weight: bold;
             background: linear-gradient(90deg, $deco-principal-color, $deco-principal-color-2);
             -webkit-background-clip: text;
@@ -87,7 +86,7 @@
     }
 
     h3 {
-        font-size: 1.4em;
+        font-size: map-get($font-size, titre-composition);
         display: inline-block;
         position: relative;
         width: 33%;

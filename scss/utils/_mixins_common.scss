@@ -1,3 +1,6 @@
-@mixin box-shadow {
-    box-shadow: 0px 0px 10px 3px $box-shadow-color;
+@mixin petit-ecran {
+      @media screen and (max-width: map-get($breakpoints, petit-ecran))
+        {
+          @content;
+      }
 }

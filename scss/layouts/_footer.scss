@@ -6,13 +6,21 @@ footer {
     bottom: 0;
 
     a {
-        font-size: 1.5em;
+        font-size: map-get($font-size, lien-footer);
+
+        @include petit-ecran {
+            font-size: map-get($font-size, lien-footer)*0.7;
+        }
     }
 }
 
 /* Animations sur le footer                                   */
     .mentions, .contactez {
         padding : 0.5em 2em 0.5em 2em;
+
+        @include petit-ecran {
+            padding: 0.5em;
+        }
 
         :hover {
             animation: wiggle 0.5s infinite;

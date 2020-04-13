@@ -18,6 +18,7 @@
 
 /* Configuration du menu chic à la française                                                                         */
     .menu_chic_a_la_francaise {
+        box-shadow: $box-shadow-dim $box-shadow-color;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -25,10 +26,8 @@
         text-align: center;
         margin: $menu-margin;
         padding: $menu-padding;
-        font-family: 'Quicksand-Regular';
+        font-family: map-get($font-family, menu_chic_a_la_francaise), $font-family-secondary;
         background-color: $menu-color;
-
-        @include box-shadow;
 
         &--entree {
             color: $deco-entree-color; 
@@ -70,7 +69,7 @@
         }
         
         &_titre {
-            font-size: 2em;
+            font-size: map-get($font-size, titre-menu);
             font-weight: bold;
             background: $menu-color-chic_a_la_francaise-degrade;
             -webkit-background-clip: text;
@@ -97,7 +96,7 @@
     }
 
     h3 {
-        font-size: 1.4em;
+        font-size: map-get($font-size, titre-composition);
         display: inline-block;
         position: relative;
         width: 33%;

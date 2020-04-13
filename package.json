@@ -4,10 +4,12 @@
   "main": "index.js",
   "scripts": {
     "sass_update": "sass --update ./scss/:./css/",
-    "sass_watch": "sass --watch ./scss/:./css/"
+    "sass_watch": "sass --watch ./scss/:./css/",
+    "prefix": "postcss ./css/*.css --use autoprefixer -d ./css/"
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/McFly91/P3_Aubert_Martin.git"

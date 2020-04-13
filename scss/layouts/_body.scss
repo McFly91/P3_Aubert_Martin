@@ -1,14 +1,15 @@
 header, footer {
     background-color: $background-color-header-footer;
+
     a {
-    font-family: 'NimbusSanL-Reg';
+    font-family: map-get($font-family, body), $font-family-secondary;
     color: $text-color-header-footer;
     }
 }
 
 body {
     margin: 0;
-    font-size: 1.4em;
+    font-size: map-get($font-size, body);
 }
 
 header {
@@ -18,7 +19,7 @@ header {
 }
 
 h2 {
-    font-family: 'NimbusSanL-Reg';
+    font-family: map-get($font-family, body), $font-family-secondary;
     text-align: center;
     margin-bottom: 0em;
 }

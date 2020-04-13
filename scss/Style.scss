@@ -2,15 +2,14 @@
     @import "./base/polices";
 /*-----------------------------------------------*/
 
-// Variables et mixins                                 
+// Variables et mixins                                
     // Variables du header et footer                  
         @import "./utils/variables_header_footer";
     ////////////////////////////////////////////////////
     // Variables de l'index
         @import "./utils/_variables_index";
-    
     ///////////////////////////////////////////////////
-    @import "./utils/mixins_common";
+    @import "./utils/mixins_media_queries";
 ////////////////////////////////////////////////////////
 
 @import "./layouts/body";
@@ -19,15 +18,21 @@
     .menu_note_enchantee, .menu_chic_a_la_francaise, .menu_delice_des_papilles, .menu_palette_du_gout {
         width: $menus-width;
         height: $menus-height;
-        box-shadow: 0px 0px 10px 3px $box-shadow-color;
+        box-shadow: $box-shadow-dim $box-shadow-color;
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
         margin: $menus-margin;
 
+        @include petit-ecran {
+            width: 90%;
+            height: $menus-height*0.7;
+            margin: $menus-margin*0.5;
+        }
+
         a {
-            font-size: 1.5em;
+            font-size: map-get($font-size, lien-menu);
             display: inline-flex;
         }
 
@@ -43,10 +48,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include petit-ecran {
+                flex-direction: column;
+            }
         }
 
         .menu_note_enchantee {
-            font-family: 'SCRIPTBL';
+            font-family: map-get($font-family, menu_note_enchantee), $font-family-secondary;
             background-color: $menu-color-note_enchantee;
 
             img {
@@ -55,7 +64,7 @@
             }
 
             a {
-            font-family: 'segoeprb';
+            font-family: map-get($font-family, menu_note_enchantee-lien), $font-family-secondary;
             color: $menu-color-note_enchantee-lien;
             text-transform: uppercase;
             }
@@ -65,7 +74,7 @@
         @import "./components/_animation_menu_note_enchantee";
 
         .menu_chic_a_la_francaise {
-            font-family: 'Quicksand-Regular';
+            font-family: map-get($font-family, menu_chic_a_la_francaise), $font-family-secondary;
             background-color: $menu-color-chic_a_la_francaise;
 
             span {
@@ -76,7 +85,7 @@
             }
 
             a {
-            font-family: Georgia;
+            font-family: map-get($font-family, menu_chic_a_la_francaise-lien), $font-family-secondary;
             font-weight: bold;
             color: $menu-color-chic_a_la_francaise-lien;
             }
@@ -87,10 +96,15 @@
         #menu_delice_des_papilles_et_palette_du_gout {
             display: flex;
             justify-content: center;
+
+            @include petit-ecran {
+                align-items: center;
+                flex-direction: column;
+            }
         }
 
         .menu_delice_des_papilles {
-            font-family: 'AlexBrush-Regular';
+            font-family: map-get($font-family, menu_delice_des_papilles), $font-family-secondary;
             font-weight: bold;
             background-color: $menu-color-delice_des_papilles;
 
@@ -108,7 +122,7 @@
         }
 
         .menu_palette_du_gout {
-            font-family: 'KaushanScript-Regular';
+            font-family: map-get($font-family, menu_palette_du_gout), $font-family-secondary;
             background-color: $menu-coloc-palette_du_gout;
 
             span {
@@ -118,7 +132,7 @@
             }
 
             a {
-                font-family: 'SegoePrint';
+                font-family: map-get($font-family, menu-lien-specific), $font-family-secondary;
                 color: $menu-color-palette_du_gout-lien;
             }
         }
@@ -138,15 +152,17 @@
         font-family: 'NimbusSanL-Reg';
         color: $text-color-header-footer;
 
+        @include petit-ecran {
+            margin-bottom: $aside-margin*0.8;
+        }
+
         p {
             margin: auto;
-            font-size: 1.5em;
+            font-size: map-get($font-size , aside);
         
             @import "./components/animation_aside";
         }
     }
-
-
 /*---------------------------------------------------*/
 
 /* Configuration de l'alignement du bloc section et du bloc aside */

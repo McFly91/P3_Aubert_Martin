@@ -18,7 +18,7 @@
 
 /*Configuration du menu la note enchantée                                                                       */
     .menu_note_enchantee {
-        box-shadow: 0px 0px 10px 3px $box-shadow-color;
+        box-shadow: $box-shadow-dim $box-shadow-color;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -26,14 +26,12 @@
         text-align: center;
         margin: $menu-margin;
         padding: $menu-padding;
-        font-family: 'SCRIPTBL';
+        font-family: map-get($font-family, menu_note_enchantee), $font-family-secondary;
         background-color: $menu-color;
 
         img {
             animation: note 3s ease-in-out infinite;
         }
-
-        @include box-shadow;
 
         @import "./components/transition_menu_note_enchantee";
 
@@ -45,7 +43,7 @@
         }
 
         &_titre {
-            font-size: 2em;
+            font-size: map-get($font-size, titre-menu);
 
             &_composition {
                 text-align: center;
@@ -83,7 +81,7 @@
     @import "./components/_animation_menu_note_enchantee";
 
     h3 {
-        font-size: 1.4em;
+        font-size: map-get($font-size, titre-composition);
         display: inline-block;
         position: relative;
         width: 33%;
