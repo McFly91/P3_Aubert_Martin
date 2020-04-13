@@ -1,20 +1,352 @@
-/* Error: expected "{".
- *   ,
- * 4 |           @content;
- *   |                   ^
- *   '
- *   scss\utils\_mixins_common.scss 4:19         @import
- *   scss\style_menu_palette_du_gout.scss 12:13  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 4 \2502            @content;\d\a   \2502                    ^\a   \2575 \a   scss\\utils\\_mixins_common.scss 4:19         @import\a   scss\\style_menu_palette_du_gout.scss 12:13  root stylesheet';
+@charset "UTF-8";
+/* Polices d'écritures pour les différents textes */
+@font-face {
+  font-family: "NimbusSanL-Reg";
+  src: url("Polices/NimbusSanL-Reg.otf");
+}
+@font-face {
+  font-family: "segoeprb";
+  src: url("Polices/segoeprb.ttf");
+}
+@font-face {
+  font-family: "SCRIPTBL";
+  src: url("Polices/SCRIPTBL.TTF");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("Polices/Quicksand-Regular.otf");
+}
+@font-face {
+  font-family: "SegoePrint";
+  src: url("Polices/segoeprb.ttf");
+}
+@font-face {
+  font-family: "AlexBrush-Regular";
+  src: url("Polices/AlexBrush-Regular.ttf");
+}
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("Polices/KaushanScript-Regular.otf");
+}
+/*-----------------------------------------------*/
+@keyframes animation_left {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+    border-radius: 0%;
+  }
+  25% {
+    transform: scaleX(0.5);
+    border-radius: 50%;
+  }
+  50% {
+    transform: scaleX(1);
+    border-radius: 75%;
+  }
+  75% {
+    transform: scaleX(0.5);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right;
+    border-radius: 0%;
+  }
+}
+@keyframes animation_right {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 0%;
+  }
+  25% {
+    transform: scaleX(0.5);
+    border-radius: 50%;
+  }
+  50% {
+    transform: scaleX(1);
+    border-radius: 75%;
+  }
+  75% {
+    transform: scaleX(0.5);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 0%;
+  }
+}
+header, footer {
+  background-color: #579c87;
+}
+header a, footer a {
+  font-family: "NimbusSanL-Reg", Arial, Helvetica, sans-serif;
+  color: #fdcb46;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlN0eWxlX21lbnVfcGFsZXR0ZV9kdV9nb3V0LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O2tFQU1rRTs7QUFFbEU7RUFDRTs2Q0FDMkM7RUFDM0MsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLDhCQUE4QjtFQUM5QixnUEFBZ1A7QUFDbFAiLCJmaWxlIjoiU3R5bGVfbWVudV9wYWxldHRlX2R1X2dvdXQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogRXJyb3I6IGV4cGVjdGVkIFwie1wiLlxuICogICAsXG4gKiA0IHwgICAgIMKgIMKgIMKgIEBjb250ZW50O1xyXG4gKiAgIHwgICAgICAgICAgICAgICAgICAgXlxuICogICAnXG4gKiAgIHNjc3NcXHV0aWxzXFxfbWl4aW5zX2NvbW1vbi5zY3NzIDQ6MTkgICAgICAgICBAaW1wb3J0XG4gKiAgIHNjc3NcXHN0eWxlX21lbnVfcGFsZXR0ZV9kdV9nb3V0LnNjc3MgMTI6MTMgIHJvb3Qgc3R5bGVzaGVldCAqL1xuXG5ib2R5OjpiZWZvcmUge1xuICBmb250LWZhbWlseTogXCJTb3VyY2UgQ29kZSBQcm9cIiwgXCJTRiBNb25vXCIsIE1vbmFjbywgSW5jb25zb2xhdGEsIFwiRmlyYSBNb25vXCIsXG4gICAgICBcIkRyb2lkIFNhbnMgTW9ub1wiLCBtb25vc3BhY2UsIG1vbm9zcGFjZTtcbiAgd2hpdGUtc3BhY2U6IHByZTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBhZGRpbmc6IDFlbTtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xuICBib3JkZXItYm90dG9tOiAycHggc29saWQgYmxhY2s7XG4gIGNvbnRlbnQ6ICdFcnJvcjogZXhwZWN0ZWQgXCJ7XCIuXFxhICAgXFwyNTc3IFxcYSA0IFxcMjUwMiAgICAgIMKgIMKgIMKgIEBjb250ZW50O1xcZFxcYSAgIFxcMjUwMiAgICAgICAgICAgICAgICAgICAgXlxcYSAgIFxcMjU3NSBcXGEgICBzY3NzXFxcXHV0aWxzXFxcXF9taXhpbnNfY29tbW9uLnNjc3MgNDoxOSAgICAgICAgIEBpbXBvcnRcXGEgICBzY3NzXFxcXHN0eWxlX21lbnVfcGFsZXR0ZV9kdV9nb3V0LnNjc3MgMTI6MTMgIHJvb3Qgc3R5bGVzaGVldCc7XG59XG4iXX0= */
+body {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+h2 {
+  font-family: "NimbusSanL-Reg", Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 0em;
+}
+@media (max-width: 1024px) {
+  h2 {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Configuration du menu 2                                                                          */
+.menu_palette_du_gout {
+  box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1em 5em 8em 5em;
+  padding: 2em 8em 6em 8em;
+  font-family: "KaushanScript-Regular", Arial, Helvetica, sans-serif;
+  background-color: #fdfffd;
+}
+@media (max-width: 1024px) {
+  .menu_palette_du_gout {
+    margin: 0;
+    margin-bottom: 4.5em;
+    padding: 0 0.3em 0 0.3em;
+  }
+}
+.menu_palette_du_gout_entree {
+  flex-direction: column;
+}
+.menu_palette_du_gout_entree span {
+  background: linear-gradient(to top, #3d923a 0%, #beff7f 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s;
+}
+.menu_palette_du_gout_entree span:hover {
+  background-size: 100% 100%;
+}
+.menu_palette_du_gout_entree h3:before {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  top: 50%;
+  right: 100%;
+  background: linear-gradient(90deg, #3d923a, #beff7f);
+  animation: animation_left 6s linear infinite;
+}
+.menu_palette_du_gout_entree h3:after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  top: 50%;
+  left: 100%;
+  background: linear-gradient(-90deg, #3d923a, #beff7f);
+  animation: animation_right 6s linear infinite;
+}
+.menu_palette_du_gout_entree--1, .menu_palette_du_gout_entree--2, .menu_palette_du_gout_entree--3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu_palette_du_gout_entree--1 p, .menu_palette_du_gout_entree--2 p, .menu_palette_du_gout_entree--3 p {
+  margin: 0;
+}
+.menu_palette_du_gout_principal {
+  flex-direction: column;
+}
+.menu_palette_du_gout_principal span {
+  background: linear-gradient(to top, #3d923a 0%, #beff7f 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s;
+}
+.menu_palette_du_gout_principal span:hover {
+  background-size: 100% 100%;
+}
+.menu_palette_du_gout_principal h3:before {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  top: 50%;
+  right: 100%;
+  background: linear-gradient(90deg, #3d923a, #beff7f);
+  animation: animation_left 6s linear infinite;
+}
+.menu_palette_du_gout_principal h3:after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  top: 50%;
+  left: 100%;
+  background: linear-gradient(-90deg, #3d923a, #beff7f);
+  animation: animation_right 6s linear infinite;
+}
+.menu_palette_du_gout_principal--1, .menu_palette_du_gout_principal--2, .menu_palette_du_gout_principal--3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu_palette_du_gout_principal--1 p, .menu_palette_du_gout_principal--2 p, .menu_palette_du_gout_principal--3 p {
+  margin: 0;
+}
+.menu_palette_du_gout_dessert {
+  flex-direction: column;
+}
+.menu_palette_du_gout_dessert span {
+  background: linear-gradient(to top, #3d923a 0%, #beff7f 8%, transparent 8.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s;
+}
+.menu_palette_du_gout_dessert span:hover {
+  background-size: 100% 100%;
+}
+.menu_palette_du_gout_dessert h3:before {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  top: 50%;
+  right: 100%;
+  background: linear-gradient(90deg, #3d923a, #beff7f);
+  animation: animation_left 6s linear infinite;
+}
+.menu_palette_du_gout_dessert h3:after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 100%;
+  top: 50%;
+  left: 100%;
+  background: linear-gradient(-90deg, #3d923a, #beff7f);
+  animation: animation_right 6s linear infinite;
+}
+.menu_palette_du_gout_dessert--1, .menu_palette_du_gout_dessert--2, .menu_palette_du_gout_dessert--3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu_palette_du_gout_dessert--1 p, .menu_palette_du_gout_dessert--2 p, .menu_palette_du_gout_dessert--3 p {
+  margin: 0;
+}
+.menu_palette_du_gout_titre {
+  font-size: 2em;
+  font-weight: bold;
+  background: linear-gradient(90deg, #3d923a, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu_palette_du_gout_titre_composition {
+  text-align: center;
+}
+.menu_palette_du_gout_composition {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+.menu_palette_du_gout div {
+  padding-right: 0.3em;
+}
+
+h3 {
+  font-size: 1.4em;
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  margin-top: 2em;
+}
+@media (max-width: 1024px) {
+  h3 {
+    margin-top: 0.5em;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/* Configuration du footer                                        */
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  font-size: 1.5em;
+}
+@media (max-width: 1024px) {
+  footer a {
+    font-size: 1.05em;
+  }
+}
+
+/* Animations sur le footer                                   */
+.mentions, .contactez {
+  padding: 0.5em 2em 0.5em 2em;
+}
+@media (max-width: 1024px) {
+  .mentions, .contactez {
+    padding: 0.5em;
+  }
+}
+.mentions :hover, .contactez :hover {
+  animation: wiggle 0.5s infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+/*-------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+/*# sourceMappingURL=Style_menu_palette_du_gout.css.map */

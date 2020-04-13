@@ -6,6 +6,14 @@
     $deco-principal-color: #3d923a;
     $deco-principal-color-2: #beff7f;
 
-// Margin et Padding
+// Margin
     $menu-margin: 1em 5em 8em 5em;
-    $menu-padding: 2em 10em 6em 10em;
+        // Pour petit écran
+        $menu-margin-top_petit_ecran: 4.5em;
+        $h3-margin-top_petit_ecran: 0.5em;
+
+// Padding
+    $menu-padding: 2em 8em 6em 8em;
+    $composition-padding-right: 0.3em;
+    // Pour petit écran
+        $menu-padding_petit_ecran: 0 0.3em 0 0.3em;

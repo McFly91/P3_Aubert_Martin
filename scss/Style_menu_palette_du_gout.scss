@@ -9,7 +9,7 @@
     // Variables des menus
         @import "./utils/variables_menu_palette_du_gout";
     ////////////////////////////////////////////////////
-    @import "./utils/mixins_common";
+    @import "./utils/mixins_media_queries";
 
     @import "./utils/mixins_menu_palette_du_gout";
 ////////////////////////////////////////////////////////
@@ -29,7 +29,15 @@
         font-family: map-get($font-family, menu_palette_du_gout), $font-family-secondary;
         background-color: $menu-color;
 
-        &--entree {
+        @include petit-ecran {
+            margin: 0;
+            margin-bottom: $menu-margin-top_petit_ecran;
+            padding: $menu-padding_petit_ecran;
+        }
+
+        &_entree {
+            flex-direction: column;
+
             @import "./components/transition_menu_palette_du_gout";
 
             h3:before {
@@ -38,9 +46,21 @@
             h3:after {
                 @include deco-menu-right
             }
+
+            &--1, &--2, &--3 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
+            }
         }
         
-        &--principal {
+        &_principal {
+            flex-direction: column;
+
             @import "./components/transition_menu_palette_du_gout";
 
             h3:before {
@@ -49,9 +69,21 @@
             h3:after {
                 @include deco-menu-right
             }
+
+            &--1, &--2, &--3 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
+            }
         }
         
-        &--dessert {
+        &_dessert {
+            flex-direction: column;
+
             @import "./components/transition_menu_palette_du_gout";
 
             h3:before {
@@ -59,6 +91,16 @@
             }
             h3:after {
                 @include deco-menu-right
+            }
+
+            &--1, &--2, &--3 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
             }
         }
         
@@ -78,10 +120,10 @@
             display: flex;
             justify-content: space-between;
             text-align: start;
+        }
 
-            div {
-                padding-right: 0.5em;
-            }
+        div {
+            padding-right: $composition-padding-right;
         }
     }
 
@@ -91,6 +133,10 @@
         position: relative;
         width: 33%;
         margin-top: 2em;
+
+        @include petit-ecran {
+            margin-top: $h3-margin-top_petit_ecran;
+        }
     }
 /*-----------------------------------------------------------------------------------------------*/
 

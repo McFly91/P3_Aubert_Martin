@@ -9,7 +9,7 @@
     // Variables des menus
         @import "./utils/variables_menu_note_enchantee";
     ///////////////////////////////////////////////////
-    @import "./utils/mixins_common";
+    @import "./utils/mixins_media_queries";
 
     @import "./utils/mixins_menu_note_enchantee";
 ////////////////////////////////////////////////////////
@@ -28,6 +28,11 @@
         padding: $menu-padding;
         font-family: map-get($font-family, menu_note_enchantee), $font-family-secondary;
         background-color: $menu-color;
+
+        @include petit-ecran {
+            margin: 0;
+            padding: 0;
+        }
 
         img {
             animation: note 3s ease-in-out infinite;
@@ -78,7 +83,7 @@
     }
 
     // Animation de la note de musique sur le menu la Note enchantée
-    @import "./components/_animation_menu_note_enchantee";
+        @import "./components/_animation_menu_note_enchantee";
 
     h3 {
         font-size: map-get($font-size, titre-composition);

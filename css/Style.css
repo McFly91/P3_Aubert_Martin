@@ -43,12 +43,8 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0;
 }
 
@@ -56,6 +52,11 @@ h2 {
   font-family: "NimbusSanL-Reg", Arial, Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 0em;
+}
+@media (max-width: 1024px) {
+  h2 {
+    display: none;
+  }
 }
 
 a {
@@ -66,18 +67,10 @@ a {
 .menu_note_enchantee, .menu_chic_a_la_francaise, .menu_delice_des_papilles, .menu_palette_du_gout {
   width: 12em;
   height: 20em;
-  -webkit-box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
-          box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 0px 10px 3px rgba(237, 237, 237, 0.75);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   margin: 1em;
 }
@@ -90,49 +83,30 @@ a {
 }
 .menu_note_enchantee a, .menu_chic_a_la_francaise a, .menu_delice_des_papilles a, .menu_palette_du_gout a {
   font-size: 1.5em;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .menu_note_enchantee span, .menu_chic_a_la_francaise span, .menu_delice_des_papilles span, .menu_palette_du_gout span {
   display: block;
 }
 .menu_note_enchantee p, .menu_chic_a_la_francaise p, .menu_delice_des_papilles p, .menu_palette_du_gout p {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   opacity: 0.5;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
-  -o-transition: transform 1s, opacity 1s;
   transition: transform 1s, opacity 1s;
-  transition: transform 1s, opacity 1s, -webkit-transform 1s;
 }
 .menu_note_enchantee p:hover, .menu_chic_a_la_francaise p:hover, .menu_delice_des_papilles p:hover, .menu_palette_du_gout p:hover {
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
   opacity: 1;
 }
 
 /* Configuration de l'affichage des menus La Note Enchantée et Le Chic à la Française */
 #menu_note_enchantee_et_chic_a_la_francaise {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1024px) {
   #menu_note_enchantee_et_chic_a_la_francaise {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -142,8 +116,7 @@ a {
 }
 .menu_note_enchantee img {
   max-width: 20%;
-  -webkit-animation: note 3s ease-in-out infinite;
-          animation: note 3s ease-in-out infinite;
+  animation: note 3s ease-in-out infinite;
 }
 .menu_note_enchantee a {
   font-family: "segoeprb", Arial, Helvetica, sans-serif;
@@ -151,33 +124,15 @@ a {
   text-transform: uppercase;
 }
 
-@-webkit-keyframes note {
-  0% {
-    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
-            transform: skew(0deg) perspective(0px) translateZ(0px);
-  }
-  50% {
-    -webkit-transform: skew(5deg) perspective(60px) translateZ(4px);
-            transform: skew(5deg) perspective(60px) translateZ(4px);
-  }
-  100% {
-    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
-            transform: skew(0deg) perspective(0px) translateZ(0px);
-  }
-}
-
 @keyframes note {
   0% {
-    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
-            transform: skew(0deg) perspective(0px) translateZ(0px);
+    transform: skew(0deg) perspective(0px) translateZ(0px);
   }
   50% {
-    -webkit-transform: skew(5deg) perspective(60px) translateZ(4px);
-            transform: skew(5deg) perspective(60px) translateZ(4px);
+    transform: skew(5deg) perspective(60px) translateZ(4px);
   }
   100% {
-    -webkit-transform: skew(0deg) perspective(0px) translateZ(0px);
-            transform: skew(0deg) perspective(0px) translateZ(0px);
+    transform: skew(0deg) perspective(0px) translateZ(0px);
   }
 }
 .menu_chic_a_la_francaise {
@@ -186,8 +141,6 @@ a {
 }
 .menu_chic_a_la_francaise span {
   font-weight: bold;
-  background: -webkit-gradient(linear, left bottom, right top, from(#c67412), to(#6e4ccc));
-  background: -o-linear-gradient(left bottom, #c67412, #6e4ccc);
   background: linear-gradient(to right top, #c67412, #6e4ccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -201,22 +154,13 @@ a {
 /*----------------------------------------------------------------------------------------*/
 /* Configuration de l'affichage des menus delice des papilles et palette du gout */
 #menu_delice_des_papilles_et_palette_du_gout {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 @media (max-width: 1024px) {
   #menu_delice_des_papilles_et_palette_du_gout {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -227,8 +171,6 @@ a {
 }
 .menu_delice_des_papilles span {
   font-size: 1.3em;
-  background: -webkit-gradient(linear, left top, right top, from(#0022db), to(#56b3f7));
-  background: -o-linear-gradient(left, #0022db, #56b3f7);
   background: linear-gradient(to right, #0022db, #56b3f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -243,8 +185,6 @@ a {
   background-color: #fdfffd;
 }
 .menu_palette_du_gout span {
-  background: -webkit-gradient(linear, left top, right top, from(#3d923a), to(#beff7f));
-  background: -o-linear-gradient(left, #3d923a, #beff7f);
   background: linear-gradient(90deg, #3d923a, #beff7f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -261,12 +201,8 @@ aside {
   width: 15em;
   height: 2.5em;
   border-radius: 0.7em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: auto;
   margin-bottom: 6em;
   background-color: #579c87;
@@ -284,27 +220,13 @@ aside p {
 }
 aside p span {
   display: inline;
-  -webkit-animation: animation_aside 1.5s infinite both;
-          animation: animation_aside 1.5s infinite both;
+  animation: animation_aside 1.5s infinite both;
 }
 aside p span:nth-child(2) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 aside p span:nth-child(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-@-webkit-keyframes animation_aside {
-  0% {
-    opacity: 0.2;
-  }
-  20% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.2;
-  }
+  animation-delay: 0.6s;
 }
 @keyframes animation_aside {
   0% {
@@ -321,24 +243,15 @@ aside p span:nth-child(3) {
 /*---------------------------------------------------*/
 /* Configuration de l'alignement du bloc section et du bloc aside */
 #section_aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 /*----------------------------------------------------------------*/
 /* Configuration du footer                                        */
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -362,104 +275,45 @@ footer a {
   }
 }
 .mentions :hover, .contactez :hover {
-  -webkit-animation: wiggle 0.5s infinite;
-          animation: wiggle 0.5s infinite;
-}
-
-@-webkit-keyframes wiggle {
-  0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
-  }
+  animation: wiggle 0.5s infinite;
 }
 
 @keyframes wiggle {
   0% {
-    -webkit-transform: translate(1px, 1px) rotate(0deg);
-            transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
   }
   10% {
-    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-            transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
   }
   20% {
-    -webkit-transform: translate(-3px, 0px) rotate(1deg);
-            transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
   }
   30% {
-    -webkit-transform: translate(3px, 2px) rotate(0deg);
-            transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
   }
   40% {
-    -webkit-transform: translate(1px, -1px) rotate(1deg);
-            transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-            transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
   }
   60% {
-    -webkit-transform: translate(-3px, 1px) rotate(0deg);
-            transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
   }
   70% {
-    -webkit-transform: translate(3px, 1px) rotate(-1deg);
-            transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
   }
   80% {
-    -webkit-transform: translate(-1px, -1px) rotate(1deg);
-            transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
   }
   90% {
-    -webkit-transform: translate(1px, 2px) rotate(0deg);
-            transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(1px, -2px) rotate(-1deg);
-            transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 /*-------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlN0eWxlLmNzcyIsIi4uL3Njc3MvU3R5bGUuc2NzcyIsIi4uL3Njc3MvYmFzZS9fcG9saWNlcy5zY3NzIiwiLi4vc2Nzcy9sYXlvdXRzL19ib2R5LnNjc3MiLCIuLi9zY3NzL3V0aWxzL192YXJpYWJsZXNfaGVhZGVyX2Zvb3Rlci5zY3NzIiwiLi4vc2Nzcy91dGlscy9fdmFyaWFibGVzX2luZGV4LnNjc3MiLCIuLi9zY3NzL3V0aWxzL19taXhpbnNfbWVkaWFfcXVlcmllcy5zY3NzIiwiLi4vc2Nzcy9jb21wb25lbnRzL190cmFuc2l0aW9uX2luZGV4LnNjc3MiLCIuLi9zY3NzL2NvbXBvbmVudHMvX2FuaW1hdGlvbl9tZW51X25vdGVfZW5jaGFudGVlLnNjc3MiLCIuLi9zY3NzL2NvbXBvbmVudHMvX2FuaW1hdGlvbl9hc2lkZS5zY3NzIiwiLi4vc2Nzcy9sYXlvdXRzL19mb290ZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUNBZixtREFBQTtBQ0FEO0VBQ0ksNkJBQUE7RUFDQSxzQ0FBQTtBRkdKO0FFQUE7RUFDSSx1QkFBQTtFQUNBLGdDQUFBO0FGRUo7QUVDQTtFQUNJLHVCQUFBO0VBQ0EsZ0NBQUE7QUZDSjtBRUVBO0VBQ0ksZ0NBQUE7RUFDQSx5Q0FBQTtBRkFKO0FFR0E7RUFDSSx5QkFBQTtFQUNBLGdDQUFBO0FGREo7QUVJQTtFQUNJLGdDQUFBO0VBQ0EseUNBQUE7QUZGSjtBRUtBO0VBQ0ksb0NBQUE7RUFDQSw2Q0FBQTtBRkhKO0FDM0JBLGtEQUFBO0FFRkE7RUFDSSx5QkFBQTtBSGdDSjtBRzlCSTtFQUNBLDJEQUFBO0VBQ0EsY0NMdUI7QUpxQzNCOztBRzVCQTtFQUNJLFNBQUE7RUFDQSxnQkFBQTtBSCtCSjs7QUc1QkE7RUFDSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLHdCQUFBO01BQUEscUJBQUE7VUFBQSx1QkFBQTtFQUNBLFNBQUE7QUgrQko7O0FHNUJBO0VBQ0ksMkRBQUE7RUFD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 */
+/*# sourceMappingURL=Style.css.map */
