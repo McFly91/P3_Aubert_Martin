@@ -72,18 +72,24 @@ a {
   justify-content: center;
   text-align: center;
   margin: 1em 5em 8em 5em;
-  padding: 2em 10em 2em 10em;
+  padding: 2em 10em 6em 10em;
   font-family: "SCRIPTBL", Arial, Helvetica, sans-serif;
   background-color: #fcdfdb;
 }
 @media (max-width: 1024px) {
   .menu_note_enchantee {
     margin: 0;
-    padding: 0;
+    margin-bottom: 4.5em;
+    padding: 0 0.3em 0 0.3em;
   }
 }
 .menu_note_enchantee img {
   animation: note 3s ease-in-out infinite;
+}
+@media (max-width: 1024px) {
+  .menu_note_enchantee img {
+    max-width: 15%;
+  }
 }
 .menu_note_enchantee span {
   background: linear-gradient(to top, black 0%, black 8%, transparent 8.01%) no-repeat;
@@ -116,19 +122,28 @@ a {
 .menu_note_enchantee_titre {
   font-size: 2em;
 }
+@media (max-width: 1024px) {
+  .menu_note_enchantee_titre {
+    margin: 0.5em;
+  }
+}
 .menu_note_enchantee_titre_composition {
   text-align: center;
 }
 .menu_note_enchantee_composition {
-  display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   text-align: start;
 }
-.menu_note_enchantee_composition_prix {
-  text-align: right;
+.menu_note_enchantee_composition--prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu_note_enchantee_composition--prix p {
+  margin: 0;
 }
 .menu_note_enchantee_composition div {
-  padding-right: 0.5em;
+  padding-right: 0.3em;
 }
 .menu_note_enchantee_fin_menu {
   display: flex;
@@ -138,7 +153,12 @@ a {
 }
 .menu_note_enchantee_fin_menu img {
   max-width: 6%;
-  padding-right: 0.5em;
+  padding-right: 0.3em;
+}
+@media (max-width: 1024px) {
+  .menu_note_enchantee_fin_menu {
+    display: none;
+  }
 }
 
 @keyframes note {
@@ -157,6 +177,11 @@ h3 {
   display: inline-block;
   position: relative;
   width: 33%;
+}
+@media (max-width: 1024px) {
+  h3 {
+    margin-top: 0.5em;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------*/

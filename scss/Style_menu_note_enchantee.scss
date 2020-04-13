@@ -31,11 +31,16 @@
 
         @include petit-ecran {
             margin: 0;
-            padding: 0;
+            margin-bottom: $menu-margin-bottom_petit_ecran;
+            padding: $menu-padding_petit_ecran;
         }
 
         img {
             animation: note 3s ease-in-out infinite;
+
+            @include petit-ecran {
+                max-width: 15%;
+            }
         }
 
         @import "./components/transition_menu_note_enchantee";
@@ -50,22 +55,31 @@
         &_titre {
             font-size: map-get($font-size, titre-menu);
 
+            @include petit-ecran {
+                margin: $titre_menu-margin_petit_ecran;
+            }
+
             &_composition {
                 text-align: center;
             }
         }
 
         &_composition {
-            display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             text-align: start;
 
-            &_prix {
-                text-align: right;
+            &--prix {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
             }
 
             div {
-                padding-right: 0.5em;
+                padding-right: $composition-padding-right;
             }
         }
 
@@ -73,11 +87,15 @@
             display: flex;
             justify-content: center;
             font-size: 1.6em;
-            margin: 1em 0 1em 0;
+            margin: $fin_menu-margin;
 
             img {
                 max-width: 6%;
-                padding-right: 0.5em;
+                padding-right: $composition-padding-right;
+            }
+
+            @include petit-ecran {
+                display: none;
             }
         }
     }
@@ -90,6 +108,10 @@
         display: inline-block;
         position: relative;
         width: 33%;
+
+        @include petit-ecran {
+            margin-top: $h3-margin-top_petit_ecran;
+        }
     }
 /*-----------------------------------------------------------------------------------------------*/
 

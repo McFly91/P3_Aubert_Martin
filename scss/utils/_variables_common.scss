@@ -1,17 +1,17 @@
-// Polices de remplacement
-    $font-family-secondary: Arial, Helvetica, sans-serif;
-    $font-family: (
-        body: 'NimbusSanL-Reg',
-        menu_note_enchantee: 'SCRIPTBL',
-        menu_note_enchantee-lien:'segoeprb',
-        menu_chic_a_la_francaise: 'Quicksand-Regular',
-        menu_chic_a_la_francaise-lien: Georgia,
-        menu_delice_des_papilles: 'AlexBrush-Regular',
-        menu_palette_du_gout: 'KaushanScript-Regular',
-        menu-lien-specific: 'SegoePrint'
-        
-    );
-
+// Polices
+    // Polices de rempalcement
+        $font-family-secondary: Arial, Helvetica, sans-serif;
+    // Polices personnalisées
+        $font-family: (
+            body: 'NimbusSanL-Reg',
+            menu_note_enchantee: 'SCRIPTBL',
+            menu_note_enchantee-lien:'segoeprb',
+            menu_chic_a_la_francaise: 'Quicksand-Regular',
+            menu_chic_a_la_francaise-lien: Georgia,
+            menu_delice_des_papilles: 'AlexBrush-Regular',
+            menu_palette_du_gout: 'KaushanScript-Regular',
+            menu-lien-specific: 'SegoePrint'  
+        );
 
 // Couleurs et dimensions du box-shadow
     $box-shadow-color: rgba(237, 237, 237, 0.75);
@@ -28,5 +28,8 @@
         );
 
 // Variables petit écran
-    @import "./variables_media_queries";
+    // Largeur d'écran
+        $breakpoints: (
+        petit-ecran: 1024px
+        );
 
