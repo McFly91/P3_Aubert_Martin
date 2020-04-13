@@ -77,8 +77,18 @@ a {
   font-weight: bold;
   background-color: #f9f9f9;
 }
+@media (max-width: 1024px) {
+  .menu_delice_des_papilles {
+    margin: 0;
+    margin-bottom: 4.5em;
+    padding: 0 0.3em 0 0.3em;
+  }
+}
 .menu_delice_des_papilles p {
   font-size: 1.3em;
+}
+.menu_delice_des_papilles__entree {
+  flex-direction: column;
 }
 .menu_delice_des_papilles__entree span {
   background: linear-gradient(to top, #0022db 0%, #0022db 8%, transparent 8.01%) no-repeat;
@@ -108,6 +118,17 @@ a {
   background: #0022db;
   border-radius: 50% 0% 50% 0%/50% 0% 50% 0%;
 }
+.menu_delice_des_papilles__entree--prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu_delice_des_papilles__entree--prix p {
+  margin: 0;
+}
+.menu_delice_des_papilles__principal {
+  flex-direction: column;
+}
 .menu_delice_des_papilles__principal span {
   background: linear-gradient(to top, #0670f3 0%, #0670f3 8%, transparent 8.01%) no-repeat;
   background-size: 0 100%;
@@ -135,6 +156,17 @@ a {
   left: 100%;
   background: #0670f3;
   border-radius: 50% 0% 50% 0%/50% 0% 50% 0%;
+}
+.menu_delice_des_papilles__principal--prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu_delice_des_papilles__principal--prix p {
+  margin: 0;
+}
+.menu_delice_des_papilles__dessert {
+  flex-direction: column;
 }
 .menu_delice_des_papilles__dessert span {
   background: linear-gradient(to top, #56b3f7 0%, #56b3f7 8%, transparent 8.01%) no-repeat;
@@ -164,6 +196,14 @@ a {
   background: #56b3f7;
   border-radius: 50% 0% 50% 0%/50% 0% 50% 0%;
 }
+.menu_delice_des_papilles__dessert--prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu_delice_des_papilles__dessert--prix p {
+  margin: 0;
+}
 .menu_delice_des_papilles_titre {
   font-size: 2em;
   font-weight: bold;
@@ -183,7 +223,7 @@ a {
   text-align: right;
 }
 .menu_delice_des_papilles_composition div {
-  padding-right: 0.5em;
+  padding-right: 0.3em;
 }
 
 h3 {
@@ -192,6 +232,11 @@ h3 {
   position: relative;
   width: 33%;
   margin-top: 2em;
+}
+@media (max-width: 1024px) {
+  h3 {
+    margin-top: 0.5em;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------*/

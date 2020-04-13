@@ -132,7 +132,7 @@
         display: inline-block;
         position: relative;
         width: 33%;
-        margin-top: 2em;
+        margin-top: $h3-margin-top;
 
         @include petit-ecran {
             margin-top: $h3-margin-top_petit_ecran;

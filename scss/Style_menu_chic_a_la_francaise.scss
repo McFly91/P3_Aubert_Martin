@@ -129,7 +129,7 @@
             }
 
             div {
-                padding-right: 0.5em;
+                padding-right: $composition-padding-right;
             }
         }
     }
@@ -139,7 +139,7 @@
         display: inline-block;
         position: relative;
         width: 33%;
-        margin-top: 2em;
+        margin-top: $h3-margin-top;
         overflow-wrap: break-word;
 
         @include petit-ecran {

@@ -30,11 +30,18 @@
         font-weight: bold;
         background-color: $menu-color-delice_des_papilles;
 
+        @include petit-ecran {
+            margin: 0;
+            margin-bottom: $menu-margin-bottom_petit_ecran;
+            padding: $menu-padding_petit_ecran;
+        }
+
         p {
             font-size: 1.3em;
         }
 
         &__entree {
+            flex-direction: column;
 
             @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_entree";
 
@@ -44,9 +51,20 @@
             h3:after {
                 @include deco-menu-left($deco-entree-color)
             }
+
+            &--prix {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
+            }
         }
         
         &__principal {
+            flex-direction: column;
 
             @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_principal";
 
@@ -56,9 +74,20 @@
             h3:after {
                 @include deco-menu-left($deco-principal-color)
             }
+
+            &--prix {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
+            }
         }
         
         &__dessert {
+            flex-direction: column;
 
             @import "./components/transition_menu_chic_a_la_francaise_ET_delice_des_papilles_dessert";
 
@@ -67,6 +96,16 @@
             }
             h3:after {
                 @include deco-menu-left($deco-dessert-color)
+            }
+
+            &--prix {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                p {
+                    margin: 0;
+                }
             }
         }
         
@@ -92,7 +131,7 @@
             }
 
             div {
-                padding-right: 0.5em;
+                padding-right: $composition-padding-right;
             }
         }
     }
@@ -102,7 +141,11 @@
         display: inline-block;
         position: relative;
         width: 33%;
-        margin-top: 2em;
+        margin-top: $h3-margin-top;
+
+        @include petit-ecran {
+            margin-top: $h3-margin-top_petit_ecran;
+        }
     }
 /*-----------------------------------------------------------------------------------------------*/
 

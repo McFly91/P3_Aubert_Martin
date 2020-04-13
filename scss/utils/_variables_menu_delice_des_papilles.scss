@@ -8,6 +8,15 @@
     $deco-dessert-color: #56b3f7;
     $menu-color-delice_des_papilles-degrade: linear-gradient(to right, $deco-entree-color, $deco-dessert-color);
 
-// Margin et Padding
+// Margin
     $menu-margin: 1em 5em 8em 5em;
+    $h3-margin-top: 2em;
+    // Pour petit écran
+        $menu-margin-bottom_petit_ecran: 4.5em;
+        $h3-margin-top_petit_ecran: 0.5em;
+
+// Padding
     $menu-padding: 2em 10em 6em 10em;
+    $composition-padding-right: 0.3em;
+    // Pour petit écran
+        $menu-padding_petit_ecran: 0 0.3em 0 0.3em;
