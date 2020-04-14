@@ -10,6 +10,10 @@ header, footer {
 body {
     margin: 0;
     font-size: map-get($font-size, body);
+
+    @include petit-ecran {
+        background-color: $menu-color;
+    }
 }
 
 header {
@@ -22,6 +26,10 @@ h2 {
     font-family: map-get($font-family, body), $font-family-secondary;
     text-align: center;
     margin-bottom: 0em;
+
+    @include petit-ecran {
+        display: none;
+    }
 }
 
 a {

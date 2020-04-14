@@ -9,7 +9,7 @@ footer {
         font-size: map-get($font-size, lien-footer);
 
         @include petit-ecran {
-            font-size: map-get($font-size, lien-footer)*0.7;
+            font-size: map-get($font-size, lien-footer)*0.5;
         }
     }
 }

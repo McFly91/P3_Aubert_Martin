@@ -14,7 +14,7 @@
     @import "./utils/mixins_menu_delice_des_papilles";
 ////////////////////////////////////////////////////////
 
-@import "./layouts/body";
+@import "./layouts/body_media_queries";
 
 /* Configuration du Délice des papilles                                                                */
     .menu_delice_des_papilles {
@@ -28,7 +28,7 @@
         padding: $menu-padding;
         font-family: map-get($font-family, menu_chic_a_la_francaise), $font-family-secondary;
         font-weight: bold;
-        background-color: $menu-color-delice_des_papilles;
+        background-color: $menu-color;
 
         @include petit-ecran {
             margin: 0;

@@ -10,13 +10,13 @@
     @import "./utils/_variables_index";
     
     ///////////////////////////////////////////////////
-    @import "./utils/mixins_common";
+    @import "./utils/mixins_media_queries";
 ////////////////////////////////////////////////////////
 
 @import "./layouts/body";
 
 p {
-    font-family: 'NimbusSanL-Reg';
+    font-family: map-get($font-family, body), $font-family-secondary;
     text-align: center;
 }
 

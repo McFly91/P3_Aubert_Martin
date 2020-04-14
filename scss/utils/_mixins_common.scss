@@ -1,6 +1,0 @@
-@mixin petit-ecran {
-      @media screen and (max-width: map-get($breakpoints, petit-ecran))
-        {
-          @content;
-      }
-}

@@ -61,6 +61,11 @@
             img {
             max-width: 20%;
             animation: note 3s ease-in-out infinite;
+
+                @include petit-ecran {
+                    max-width: 15%;
+                }
+ 
             }
 
             a {
@@ -153,6 +158,7 @@
         color: $text-color-header-footer;
 
         @include petit-ecran {
+            width: 90%;
             margin-bottom: $aside-margin*0.8;
         }
 
