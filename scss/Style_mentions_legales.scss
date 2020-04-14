@@ -15,9 +15,13 @@
 
 @import "./layouts/body";
 
-p {
+.infos {
     font-family: map-get($font-family, body), $font-family-secondary;
     text-align: center;
+
+     @include petit-ecran {
+         margin-bottom: 4.5em;
+     }
 }
 
 /* Configuration du footer                                        */
