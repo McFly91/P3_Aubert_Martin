@@ -25,6 +25,8 @@
         text-align: center;
         margin: $menus-margin;
 
+        @import "./components/transition_index";
+
         @include petit-ecran {
             width: 90%;
             height: $menus-height*0.7;
@@ -33,14 +35,14 @@
 
         a {
             font-size: map-get($font-size, lien-menu);
-            display: inline-flex;
+            display: inline-block;
         }
 
-        span {
+        h2 {
+            font-size: map-get($font-size, h2-menu);
             display: block;
+            margin: 0;
         }
-
-        @import "./components/transition_index";
     }
 
     /* Configuration de l'affichage des menus La Note Enchantée et Le Chic à la Française */
@@ -65,13 +67,12 @@
                 @include petit-ecran {
                     max-width: 15%;
                 }
- 
             }
 
             a {
-            font-family: map-get($font-family, menu_note_enchantee-lien), $font-family-secondary;
-            color: $menu-color-note_enchantee-lien;
-            text-transform: uppercase;
+                font-family: map-get($font-family, menu_note_enchantee-lien), $font-family-secondary;
+                color: $menu-color-note_enchantee-lien;
+                text-transform: uppercase;
             }
         }
 
@@ -82,7 +83,7 @@
             font-family: map-get($font-family, menu_chic_a_la_francaise), $font-family-secondary;
             background-color: $menu-color-chic_a_la_francaise;
 
-            span {
+            h2 {
             font-weight: bold;
             background: $menu-color-chic_a_la_francaise-degrade;
             -webkit-background-clip: text;
@@ -113,8 +114,8 @@
             font-weight: bold;
             background-color: $menu-color-delice_des_papilles;
 
-            span {
-                font-size: 1.3em;
+            h2 {
+                font-size: map-get($font-size, h2-menu)*1.2;
                 background: $menu-color-delice_des_papilles-degrade;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -130,7 +131,7 @@
             font-family: map-get($font-family, menu_palette_du_gout), $font-family-secondary;
             background-color: $menu-coloc-palette_du_gout;
 
-            span {
+            h2 {
                 background: $menu-color-palette_du_gout-degrade;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -148,7 +149,7 @@
     aside {
         width: $aside-width;
         height: $aside-height;
-        border-radius: 0.7em;
+        border-radius: 1rem;
         display: flex;
         justify-content: center;
         margin: auto;

@@ -16,10 +16,10 @@ footer {
 
 /* Animations sur le footer                                   */
     .mentions, .contactez {
-        padding : 0.5em 2em 0.5em 2em;
+        padding : $footer-padding;
 
         @include petit-ecran {
-            padding: 0.5em;
+            padding: 0.5rem;
         }
 
         :hover {
