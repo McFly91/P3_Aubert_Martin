@@ -56,7 +56,7 @@ a {
   text-decoration: none;
 }
 
-.infos {
+.infos, h2 {
   font-family: "NimbusSanL-Reg", Arial, Helvetica, sans-serif;
   text-align: center;
 }
